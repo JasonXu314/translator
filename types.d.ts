@@ -1,0 +1,1 @@
+type Langs = 'ina' | 'eng';
