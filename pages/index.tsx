@@ -3,7 +3,7 @@ import { NextPage } from 'next/types';
 import { useEffect, useMemo, useState } from 'react';
 
 const Index: NextPage = () => {
-	const [inputLang, setInputLang] = useState<Langs>('ina');
+	const [inputLang, setInputLang] = useState<Langs>('eng');
 	const outputLang = useMemo(() => (inputLang === 'eng' ? 'ina' : 'eng'), [inputLang]);
 	const [input, setInput] = useState<string>('');
 	const [output, setOutput] = useState<string>('');
@@ -35,24 +35,22 @@ const Index: NextPage = () => {
 		<div>
 			<h1>Online Interlingua Translator</h1>
 
-			<div align="justify" class="welcome">
+			<div className="welcome">
 				Welcome to the first online, public, and free Interlingua and English translator! Input your text in the
 				left text box and the translated sentence will be shown in the right text box. Click the "Change Language"
 				button below to change the translator's direction.
 			</div>
-
-
 
 			<br></br>
 
 			<div style={{ display: 'flex', flexDirection: 'row' }}>
 				<div>
 					<h4 style={{ margin: '0.25em 0.25em' }}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-					<textarea rows={6} cols={64} value={input} onChange={(evt) => setInput(evt.target.value)} />
+					<textarea rows={9} cols={96} value={input} onChange={(evt) => setInput(evt.target.value)} />
 				</div>
 				<div>
 					<h4 style={{ margin: '0.25em 0.25em' }}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-					<textarea rows={6} cols={64} value={output} readOnly />
+					<textarea rows={9} cols={96} value={output} readOnly />
 				</div>
 			</div>
 
@@ -69,7 +67,7 @@ const Index: NextPage = () => {
 
 			<h2>Information</h2>
 
-			<div align="justify" class="information">
+			<div className="information">
 				Interlingua is an international auxiliary language (IAL). IALs, such as Esperanto, are artificial languages 
 	           that are constructed to simplify communication between speakers who do not share a common first language. 
 	           Interlingua’s vocabulary and grammar are derived from a combination of different Romance languages. Therefore, 
@@ -85,8 +83,8 @@ const Index: NextPage = () => {
 
 			<br></br>
 
-			<div class="content">
-                    <div class="more_resources">
+			<div className="content">
+                    <div className="more_resources">
                         <h2>More Resources</h2>
 
                         <h4>Interlingua Corpus Project</h4>
@@ -94,7 +92,7 @@ const Index: NextPage = () => {
                             a collection of over 1.2 million quality-controlled Interlingua sentences scraped from an individually-designed 
                             web crawler that has visited over 6 million relevant websites, while also providing over 80,000 parallel 
                             Interlingua-English sentences and other useful data.
-                            
+
                             <br></br>
                             <a href="https://interlingua-translator.vercel.app/">Link to the Interlingua-English Translator</a>
                         <br></br>
