@@ -42,11 +42,11 @@ const Index: NextPage = () => {
 			</button>
 			<div style={{ display: 'flex', flexDirection: 'row' }}>
 				<div>
-					<h4 style={{ margin: '0.25em 1em' }}>{inputLang}</h4>
+					<h4 style={{ margin: '0.25em 1em' }}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
 					<textarea rows={6} cols={64} value={input} onChange={(evt) => setInput(evt.target.value)} />
 				</div>
 				<div>
-					<h4 style={{ margin: '0.25em 1em' }}>{outputLang}</h4>
+					<h4 style={{ margin: '0.25em 1em' }}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
 					<textarea rows={6} cols={64} value={output} readOnly />
 				</div>
 			</div>
