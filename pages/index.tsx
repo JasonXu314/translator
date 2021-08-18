@@ -3,7 +3,7 @@ import { NextPage } from 'next/types';
 import { useEffect, useMemo, useState } from 'react';
 
 const Index: NextPage = () => {
-	const [inputLang, setInputLang] = useState<Langs>('ina');
+	const [inputLang, setInputLang] = useState<Langs>('eng');
 	const outputLang = useMemo(() => (inputLang === 'eng' ? 'ina' : 'eng'), [inputLang]);
 	const [input, setInput] = useState<string>('');
 	const [output, setOutput] = useState<string>('');
@@ -34,7 +34,7 @@ const Index: NextPage = () => {
 		<div>
 			<h1>Online Interlingua Translator</h1>
 
-			<div style={{ textAlign: 'justify' }} className="welcome">
+			<div className="welcome">
 				Welcome to the first online, public, and free Interlingua and English translator! Input your text in the
 				left text box and the translated sentence will be shown in the right text box. Click the &quot;Change
 				Language&quot; button below to change the translator&apos;s direction.
@@ -43,11 +43,11 @@ const Index: NextPage = () => {
 			<div style={{ display: 'flex', flexDirection: 'row' }}>
 				<div>
 					<h4 style={{ margin: '0.25em 0.25em' }}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-					<textarea rows={6} cols={64} value={input} onChange={(evt) => setInput(evt.target.value)} />
+					<textarea rows={9} cols={96} value={input} onChange={(evt) => setInput(evt.target.value)} />
 				</div>
 				<div>
 					<h4 style={{ margin: '0.25em 0.25em' }}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-					<textarea rows={6} cols={64} value={output} readOnly />
+					<textarea rows={9} cols={96} value={output} readOnly />
 				</div>
 			</div>
 			<button
@@ -60,7 +60,7 @@ const Index: NextPage = () => {
 			</button>
 			<br></br>
 			<h2>Information</h2>
-			<div style={{ textAlign: 'justify' }} className="information">
+			<div className="information">
 				Interlingua is an international auxiliary language (IAL). IALs, such as Esperanto, are artificial
 				languages that are constructed to simplify communication between speakers who do not share a common first
 				language. Interlingua’s vocabulary and grammar are derived from a combination of different Romance
