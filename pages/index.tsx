@@ -1,12 +1,19 @@
 import axios from 'axios';
 import { NextPage } from 'next/types';
 import { useEffect, useMemo, useState } from 'react';
+import Button from '../components/Button/Button';
+import styles from '../sass/Index.module.scss';
 
 const Index: NextPage = () => {
 	const [inputLang, setInputLang] = useState<Langs>('eng');
 	const outputLang = useMemo(() => (inputLang === 'eng' ? 'ina' : 'eng'), [inputLang]);
 	const [input, setInput] = useState<string>('');
 	const [output, setOutput] = useState<string>('');
+
+	useEffect(() => {
+		axios.post('https://interlinguatranslatorengtoina.herokuapp.com/wakeup').catch(() => {});
+		axios.post('https://interlinguatranslatorinatoeng.herokuapp.com/wakeup').catch(() => {});
+	}, []);
 
 	useEffect(() => {
 		if (input.trim().length > 0) {
@@ -31,33 +38,31 @@ const Index: NextPage = () => {
 	}, [input, inputLang, outputLang]);
 
 	return (
-		<div>
+		<div className={styles.main}>
 			<h1>Online Interlingua Translator</h1>
-
-			<div className="welcome">
+			<div className={styles.welcome}>
 				Welcome to the first online, public, and free Interlingua and English translator! Input your text in the
 				left text box and the translated sentence will be shown in the right text box. Click the &quot;Change
 				Language&quot; button below to change the translator&apos;s direction.
 			</div>
-			<br></br>
-			<div style={{ display: 'flex', flexDirection: 'row' }}>
-				<div>
-					<h4 style={{ margin: '0.25em 0.25em' }}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-					<textarea rows={9} cols={96} value={input} onChange={(evt) => setInput(evt.target.value)} />
-				</div>
-				<div>
-					<h4 style={{ margin: '0.25em 0.25em' }}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-					<textarea rows={9} cols={96} value={output} readOnly />
-				</div>
+			<div className={styles['lang-row']}>
+				<h4 className={styles.lang}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
+				<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
 			</div>
-			<button
-				onClick={() => {
-					setInputLang(inputLang === 'eng' ? 'ina' : 'eng');
-					setInput(output);
-					setOutput('');
-				}}>
-				Change Language
-			</button>
+			<div className={styles['control-row']}>
+				<textarea rows={9} cols={96} value={input} onChange={(evt) => setInput(evt.target.value)} />
+				<div className={styles['btn-container']}>
+					<Button
+						onClick={() => {
+							setInputLang(inputLang === 'eng' ? 'ina' : 'eng');
+							setInput(output);
+							setOutput('');
+						}}>
+						<img src="/swap.svg" alt="Swap Languages" />
+					</Button>
+				</div>
+				<textarea rows={9} cols={96} value={output} readOnly />
+			</div>
 			<br></br>
 			<h2>Information</h2>
 			<div className="information">
@@ -83,7 +88,9 @@ const Index: NextPage = () => {
 					individually-designed web crawler that has visited over 6 million relevant websites, while also
 					providing over 80,000 parallel Interlingua-English sentences and other useful data.
 					<br></br>
-					<a href="https://interlingua-translator.vercel.app/">Link to the Interlingua-English Translator</a>
+					<a target="_blank" rel="noreferrer noopener" href="https://interlingua-translator.vercel.app/">
+						Link to the Interlingua-English Translator
+					</a>
 					<br></br>
 					<h4>Google Colab Interlingua Translator</h4>
 					Created by Jason Ding with the help of his mentor, Todd Mockler, the first online, public, and free
@@ -92,16 +99,26 @@ const Index: NextPage = () => {
 					<br></br>
 					The model has scored a BLEU score of 42.45 going from English to Interlingua and a 42.54 going from
 					Interlingua to English, both of which are &quot;high quality translation&quot; according to one of{' '}
-					<a href="https://cloud.google.com/translate/automl/docs/evaluate">Google&apos;s articles.</a>
+					<a
+						target="_blank"
+						rel="noreferrer noopener"
+						href="https://cloud.google.com/translate/automl/docs/evaluate">
+						Google&apos;s articles.
+					</a>
 					<br></br>
-					<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing">
+					<a
+						target="_blank"
+						rel="noreferrer noopener"
+						href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing">
 						Link to the Google Colab Interlingua-English Translator
 					</a>
 					<br></br>
 					<h4>Source Code</h4>
 					All source code and code used in all of the projects will be posted in the following GitHub account.
 					<br></br>
-					<a href="https://github.com/JasonDing9">Link to the GitHub account</a>
+					<a target="_blank" rel="noreferrer noopener" href="https://github.com/JasonDing9">
+						Link to the GitHub account
+					</a>
 				</div>
 			</div>
 		</div>

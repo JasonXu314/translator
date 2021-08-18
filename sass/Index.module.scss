@@ -1,0 +1,40 @@
+.main {
+	.welcome {
+		margin-bottom: 1em;
+	}
+
+	.lang-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.lang {
+			margin: 0.25em 5em;
+		}
+	}
+
+	.control-row {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+
+		.btn-container {
+			position: relative;
+			top: 25%;
+		}
+
+		textarea {
+			outline: none;
+			resize: none;
+
+			&:read-only {
+				background-color: darken(white, 10%);
+				cursor: not-allowed;
+			}
+		}
+	}
+
+	a {
+		color: blue;
+	}
+}
