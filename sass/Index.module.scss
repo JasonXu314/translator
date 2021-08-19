@@ -1,5 +1,6 @@
 .main {
 	.welcome {
+		padding: 0.25em 1em;
 		margin-bottom: 1em;
 	}
 
@@ -17,6 +18,7 @@
 		position: relative;
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
+		padding: 0.25em 1em;
 
 		.btn-container {
 			position: relative;
@@ -34,7 +36,28 @@
 		}
 	}
 
+	.information {
+		padding: 0.25em 1em;
+	}
+
+	.viewer-counts {
+		padding: 0.25em 1em;
+
+		.regular {
+			margin-top: 1em;
+		}
+	}
+
 	a {
 		color: blue;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0.25em 0;
 	}
 }

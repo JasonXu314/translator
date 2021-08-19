@@ -39,11 +39,11 @@ const Index: NextPage = () => {
 
 	return (
 		<div className={styles.main}>
-			<h1>Online Interlingua Translator</h1>
 			<div className={styles.welcome}>
-				Welcome to the first online, public, and free Interlingua and English translator! Input your text in the
-				left text box and the translated sentence will be shown in the right text box. Click the &quot;Change
-				Language&quot; button below to change the translator&apos;s direction.
+				<h1>Online Interlingua Translator</h1>
+				Welcome to the first online, public, and free and open source Interlingua and English translator! Input
+				your text in the left text box and the translated sentence will be shown in the right text box. Click the
+				&quot;Change Language&quot; button below to change the translator&apos;s direction.
 			</div>
 			<div className={styles['lang-row']}>
 				<h4 className={styles.lang}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
@@ -64,8 +64,8 @@ const Index: NextPage = () => {
 				<textarea rows={9} cols={96} value={output} readOnly />
 			</div>
 			<br></br>
-			<h2>Information</h2>
-			<div className="information">
+			<div className={styles.information}>
+				<h2>Information</h2>
 				Interlingua is an international auxiliary language (IAL). IALs, such as Esperanto, are artificial
 				languages that are constructed to simplify communication between speakers who do not share a common first
 				language. Interlingua’s vocabulary and grammar are derived from a combination of different Romance
@@ -79,9 +79,9 @@ const Index: NextPage = () => {
 				Interlingua to a broader audience. <br></br>
 			</div>
 			<br></br>
-			<div className="content">
-				<div className="more-resources">
-					<h2>More Resources</h2>
+			<div className={styles.information}>
+				<h2>More Resources</h2>
+				<div className={styles['more-resources']}>
 					<h4>Interlingua Corpus Project</h4>
 					Created by Jason Ding with the help of his mentor, Todd Mockler, the Interlingua Corpus Project has a
 					collection of over 1.2 million quality-controlled Interlingua sentences scraped from an
@@ -110,7 +110,7 @@ const Index: NextPage = () => {
 						target="_blank"
 						rel="noreferrer noopener"
 						href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing">
-						Link to the Google Colab Interlingua-English Translator
+						Link to the Google Collab Interlingua-English Translator
 					</a>
 					<br></br>
 					<h4>Source Code</h4>
@@ -122,16 +122,30 @@ const Index: NextPage = () => {
 				</div>
 			</div>
 
-			<div className="viewercount">
-				<!-- hitwebcounter Code START -->
-				<a href="https://www.hitwebcounter.com" target="_blank">
-				<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=7&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
-
-				<!-- hitwebcounter Code START -->
-				<a href="https://www.hitwebcounter.com" target="_blank">
-				<img src="https://hitwebcounter.com/counter/counter.php?page=7856188&style=0008&nbdigits=7&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
+			<div className={styles['viewer-counts']}>
+				<div className={styles.regular}>
+					This site has been visited{' '}
+					<img
+						src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=3&type=page&initCount=0"
+						alt="web counter"
+					/>{' '}
+					times
+				</div>
+				<div className={styles.unique}>
+					This site has been visited by{' '}
+					<img
+						src="https://hitwebcounter.com/counter/counter.php?page=7856188&style=0008&nbdigits=3&type=ip&initCount=0"
+						alt="web counter"
+					/>{' '}
+					people
+				</div>
+				<div>
+					This website&apos;s source can be found{' '}
+					<a href="https://github.com/JasonXu314/translator" target="_blank" rel="noreferrer noopener">
+						here
+					</a>
+				</div>
 			</div>
-
 		</div>
 	);
 };
