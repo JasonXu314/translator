@@ -88,8 +88,8 @@ const Index: NextPage = () => {
 					individually-designed web crawler that has visited over 6 million relevant websites, while also
 					providing over 80,000 parallel Interlingua-English sentences and other useful data.
 					<br></br>
-					<a target="_blank" rel="noreferrer noopener" href="https://interlingua-translator.vercel.app/">
-						Link to the Interlingua-English Translator
+					<a target="_blank" rel="noreferrer noopener" href="http://www.interlinguacorpus.org/">
+						Link to the Interlingua Corpus Project
 					</a>
 					<br></br>
 					<h4>Google Colab Interlingua Translator</h4>
@@ -121,6 +121,17 @@ const Index: NextPage = () => {
 					</a>
 				</div>
 			</div>
+
+			<div className="viewercount">
+				<!-- hitwebcounter Code START -->
+				<a href="https://www.hitwebcounter.com" target="_blank">
+				<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=7&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
+
+				<!-- hitwebcounter Code START -->
+				<a href="https://www.hitwebcounter.com" target="_blank">
+				<img src="https://hitwebcounter.com/counter/counter.php?page=7856188&style=0008&nbdigits=7&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
+			</div>
+
 		</div>
 	);
 };
