@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Head from 'next/head';
 import { NextPage } from 'next/types';
 import { useEffect, useMemo, useState } from 'react';
 import Button from '../components/Button/Button';
@@ -39,6 +40,19 @@ const Index: NextPage = () => {
 
 	return (
 		<div className={styles.main}>
+			<Head>
+				<title>Online Interlingua-English Translator</title>
+				<meta
+					name="description"
+					content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses."
+				/>
+				<meta
+					name="keywords"
+					content="Interlingua, sentences, vocabulary, grammar, IALA, language, corpus, linguistics, international auxiliary language, IAL, romance languages, word, frequency, conlang, auxlang, constructed language, Esperanto, Ido, Interlingue, Occidental, Latino sine flexione"
+				/>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="author" content="Jason Ding, Jason Xu" />
+			</Head>
 			<div className={styles.welcome}>
 				<h1>Online Interlingua Translator</h1>
 				Welcome to the first online, public, and free and open source Interlingua and English translator! Input
