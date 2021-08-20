@@ -17,6 +17,30 @@ const Index: NextPage = () => {
 	}, []);
 
 	useEffect(() => {
+		document.title = 'Online Interlingua-English Translator';
+
+		var meta = document.createElement('meta');
+		meta.name = "description";
+		meta.content = "Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses.";
+		document.getElementsByTagName('head')[0].appendChild(meta);
+
+		var meta = document.createElement('meta');
+		meta.name = "keywords";
+		meta.content = "Interlingua, sentences, vocabulary, grammar, IALA, language, corpus, linguistics, international auxiliary language, IAL, romance languages, word, frequency, conlang, auxlang, constructed language, Esperanto, Ido, Interlingue, Occidental, Latino sine flexione";
+		document.getElementsByTagName('head')[0].appendChild(meta);
+
+		var meta = document.createElement('meta');
+		meta.name = "viewport";
+		meta.content = "width=device-width, initial-scale=1";
+		document.getElementsByTagName('head')[0].appendChild(meta);
+
+		var meta = document.createElement('meta');
+		meta.name = "author";
+		meta.content = "Online Interlingua-English Translator";
+		document.getElementsByTagName('head')[0].appendChild(meta);
+	}, [])
+
+	useEffect(() => {
 		if (input.trim().length > 0) {
 			const { token, cancel } = axios.CancelToken.source();
 
@@ -38,10 +62,10 @@ const Index: NextPage = () => {
 		}
 	}, [input, inputLang, outputLang]);
 
-	return (
+	return (	
 		<div className={styles.main}>
 			<div className={styles.welcome}>
-				<h1>Online Interlingua Translator</h1>
+				<h1>Online Interlingua-English Translator</h1>
 				Welcome to the first online, public, and free and open source Interlingua and English translator! Input
 				your text in the left text box and the translated sentence will be shown in the right text box. Click the
 				&quot;Change Language&quot; button below to change the translator&apos;s direction.
