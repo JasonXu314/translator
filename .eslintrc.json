@@ -30,6 +30,7 @@
 		"no-case-declarations": "off",
 		"react/prop-types": "off",
 		"prefer-const": "warn",
-		"no-empty": "off"
+		"no-empty": "off",
+		"no-var": "off"
 	}
 }
