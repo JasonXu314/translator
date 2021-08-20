@@ -17,6 +17,30 @@ const Index: NextPage = () => {
 	}, []);
 
 	useEffect(() => {
+		document.title = 'Online Interlingua-English Translator';
+
+		var meta = document.createElement('meta');
+		meta.name = "description";
+		meta.content = "Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses.";
+		document.getElementsByTagName('head')[0].appendChild(meta);
+
+		var meta = document.createElement('meta');
+		meta.name = "keywords";
+		meta.content = "Interlingua, sentences, vocabulary, grammar, IALA, language, corpus, linguistics, international auxiliary language, IAL, romance languages, word, frequency, conlang, auxlang, constructed language, Esperanto, Ido, Interlingue, Occidental, Latino sine flexione";
+		document.getElementsByTagName('head')[0].appendChild(meta);
+
+		var meta = document.createElement('meta');
+		meta.name = "viewport";
+		meta.content = "width=device-width, initial-scale=1";
+		document.getElementsByTagName('head')[0].appendChild(meta);
+
+		var meta = document.createElement('meta');
+		meta.name = "author";
+		meta.content = "Online Interlingua-English Translator";
+		document.getElementsByTagName('head')[0].appendChild(meta);
+	}, [])
+
+	useEffect(() => {
 		if (input.trim().length > 0) {
 			const { token, cancel } = axios.CancelToken.source();
 
@@ -38,7 +62,7 @@ const Index: NextPage = () => {
 		}
 	}, [input, inputLang, outputLang]);
 
-	return (
+	return (	
 		<div className={styles.main}>
 			<Head>
 				<title>Online Interlingua-English Translator</title>
@@ -54,7 +78,7 @@ const Index: NextPage = () => {
 				<meta name="author" content="Jason Ding, Jason Xu" />
 			</Head>
 			<div className={styles.welcome}>
-				<h1>Online Interlingua Translator</h1>
+				<h1>Online Interlingua-English Translator</h1>
 				Welcome to the first online, public, and free and open source Interlingua and English translator! Input
 				your text in the left text box and the translated sentence will be shown in the right text box. Click the
 				&quot;Change Language&quot; button below to change the translator&apos;s direction.
@@ -64,7 +88,7 @@ const Index: NextPage = () => {
 				<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
 			</div>
 			<div className={styles['control-row']}>
-				<textarea rows={9} cols={96} value={input} onChange={(evt) => setInput(evt.target.value)} />
+				<textarea rows={12} cols={96} value={input} maxLength={999} onChange={(evt) => setInput(evt.target.value)} />
 				<div className={styles['btn-container']}>
 					<Button
 						onClick={() => {
@@ -75,7 +99,7 @@ const Index: NextPage = () => {
 						<img src="/swap.svg" alt="Swap Languages" />
 					</Button>
 				</div>
-				<textarea rows={9} cols={96} value={output} readOnly />
+				<textarea rows={12} cols={96} value={output} readOnly />
 			</div>
 			<br></br>
 			<div className={styles.information}>
@@ -101,10 +125,12 @@ const Index: NextPage = () => {
 					collection of over 1.2 million quality-controlled Interlingua sentences scraped from an
 					individually-designed web crawler that has visited over 6 million relevant websites, while also
 					providing over 80,000 parallel Interlingua-English sentences and other useful data.
+					
 					<br></br>
 					<a target="_blank" rel="noreferrer noopener" href="http://www.interlinguacorpus.org/">
 						Link to the Interlingua Corpus Project
 					</a>
+					<br></br>
 					<br></br>
 					<h4>Google Colab Interlingua Translator</h4>
 					Created by Jason Ding with the help of his mentor, Todd Mockler, the first online, public, and free
@@ -127,6 +153,7 @@ const Index: NextPage = () => {
 						Link to the Google Collab Interlingua-English Translator
 					</a>
 					<br></br>
+					<br></br>
 					<h4>Source Code</h4>
 					All source code and code used in all of the projects will be posted in the following GitHub account.
 					<br></br>
@@ -135,6 +162,28 @@ const Index: NextPage = () => {
 					</a>
 				</div>
 			</div>
+
+			<br></br>
+			<div className={styles.information}>
+				<h2>Credits</h2>
+				<div className={styles['more-resources']}>
+					<ul>
+						<h4>Jason Ding - <i>Lead Project Designer and Computational Linguistics Programmer</i></h4>
+						<ul>
+							<li>Contact Email: jasonding@berkeley.edu</li>
+							<li>Education: Current student at UC Berkeley (2021 - 2025)</li>
+						</ul>
+
+						<h4>Todd Mockler - <i>Mentor</i></h4>
+						<ul>
+							<li>Contact Email: TMockler@danforthcenter.org</li>
+							<li>About: Principal Investigator at the Donald Danforth Plant Science Center</li>
+						</ul>
+					</ul>
+					
+				</div>
+			</div>
+
 
 			<div className={styles['viewer-counts']}>
 				<div className={styles.regular}>
