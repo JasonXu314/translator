@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { kMaxLength } from 'buffer';
 import { NextPage } from 'next/types';
 import { useEffect, useMemo, useState } from 'react';
 import Button from '../components/Button/Button';
@@ -50,7 +51,7 @@ const Index: NextPage = () => {
 				<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
 			</div>
 			<div className={styles['control-row']}>
-				<textarea rows={9} cols={96} value={input} onChange={(evt) => setInput(evt.target.value)} />
+				<textarea rows={12} cols={96} value={input} maxLength={999} onChange={(evt) => setInput(evt.target.value)} />
 				<div className={styles['btn-container']}>
 					<Button
 						onClick={() => {
@@ -61,7 +62,7 @@ const Index: NextPage = () => {
 						<img src="/swap.svg" alt="Swap Languages" />
 					</Button>
 				</div>
-				<textarea rows={9} cols={96} value={output} readOnly />
+				<textarea rows={12} cols={96} value={output} readOnly />
 			</div>
 			<br></br>
 			<div className={styles.information}>
@@ -87,10 +88,12 @@ const Index: NextPage = () => {
 					collection of over 1.2 million quality-controlled Interlingua sentences scraped from an
 					individually-designed web crawler that has visited over 6 million relevant websites, while also
 					providing over 80,000 parallel Interlingua-English sentences and other useful data.
+					
 					<br></br>
 					<a target="_blank" rel="noreferrer noopener" href="http://www.interlinguacorpus.org/">
 						Link to the Interlingua Corpus Project
 					</a>
+					<br></br>
 					<br></br>
 					<h4>Google Colab Interlingua Translator</h4>
 					Created by Jason Ding with the help of his mentor, Todd Mockler, the first online, public, and free
@@ -113,6 +116,7 @@ const Index: NextPage = () => {
 						Link to the Google Collab Interlingua-English Translator
 					</a>
 					<br></br>
+					<br></br>
 					<h4>Source Code</h4>
 					All source code and code used in all of the projects will be posted in the following GitHub account.
 					<br></br>
@@ -121,6 +125,28 @@ const Index: NextPage = () => {
 					</a>
 				</div>
 			</div>
+
+			<br></br>
+			<div className={styles.information}>
+				<h2>Credits</h2>
+				<div className={styles['more-resources']}>
+					<ul>
+						<h4>Jason Ding - <i>Lead Project Designer and Computational Linguistics Programmer</i></h4>
+						<ul>
+							<li>Contact Email: jasonding@berkeley.edu</li>
+							<li>Education: Current student at UC Berkeley (2021 - 2025)</li>
+						</ul>
+
+						<h4>Todd Mockler - <i>Mentor</i></h4>
+						<ul>
+							<li>Contact Email: TMockler@danforthcenter.org</li>
+							<li>About: Principal Investigator at the Donald Danforth Plant Science Center</li>
+						</ul>
+					</ul>
+					
+				</div>
+			</div>
+
 
 			<div className={styles['viewer-counts']}>
 				<div className={styles.regular}>
