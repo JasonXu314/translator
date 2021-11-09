@@ -18,7 +18,7 @@ const Index: NextPage = () => {
 			const timeout = setTimeout(() => {
 				setOutput('Loading Translation...');
 				axios
-					.get(`/api?text=${input}&direction=${outputLang === 'ina' ? 1 : 0}`, {
+					.get(`/api?text=${encodeURI(input)}&direction=${outputLang === 'ina' ? 1 : 0}`, {
 						cancelToken: token
 					})
 					.then((res) => {
