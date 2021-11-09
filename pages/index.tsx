@@ -18,11 +18,14 @@ const Index: NextPage = () => {
 			const timeout = setTimeout(() => {
 				setOutput('Loading Translation...');
 				axios
-					.get(`http://18.26.2.114:5000/?text=${input}&direction=${outputLang === 'ina' ? 1 : 0}`, {
+					.get(`/api?text=${input}&direction=${outputLang === 'ina' ? 1 : 0}`, {
 						cancelToken: token
 					})
 					.then((res) => {
 						setOutput(res.data);
+					})
+					.catch((err) => {
+						console.error(err);
 					});
 			}, 500);
 
