@@ -40,24 +40,24 @@ const Index: NextPage = () => {
 		<div className={styles.main}>
 			<Head>
 				<title>Online Interlingua-English Translator</title>
-				<meta name="description" content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses." />
+				<meta name="description" content="The first online, public, and free and open source Interlingua and English translator." />
 
 				<meta property="og:url" content="https://interlingua-translator.vercel.app/" />
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content="Online Interlingua-English Translator" />
-				<meta property="og:description" content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses." />
+				<meta property="og:description" content="The first online, public, and free and open source Interlingua and English translator." />
 				<meta property="og:image" content="http://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png" />
 
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta property="twitter:domain" content="interlingua-translator.vercel.app" />
 				<meta property="twitter:url" content="https://interlingua-translator.vercel.app/" />
 				<meta name="twitter:title" content="Online Interlingua-English Translator" />
-				<meta name="twitter:description" content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses." />
+				<meta name="twitter:description" content="The first online, public, and free and open source Interlingua and English translator." />
 				<meta name="twitter:image" content="http://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png" />
 
 				<meta
 					name="description"
-					content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses."
+					content="The first online, public, and free and open source Interlingua and English translator."
 				/>
 				<meta
 					name="keywords"
