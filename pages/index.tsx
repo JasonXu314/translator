@@ -39,8 +39,6 @@ const Index: NextPage = () => {
 	return (
 		<div className={styles.main}>
 			<Head>
-				<link rel="icon" href="https://interlingua-translator.vercel.app/favicon.png" />
-		
 				<meta property="og:title" content="Interlingua Corpus Project" />
 				<meta property="og:image" content="https://interlingua-translator.vercel.app/favicon.png" />
 				<meta property="og:description" content="Welcome to the Interlingua Corpus Project! The goal of the Interlingua Corpus Project is to aggregate a large collection of Interlingua sentences as a community resource. The sentences in this corpus, including matched pairs of Interlingua-English sentences, are automatically collected from public websites and documents using a web crawler." />
