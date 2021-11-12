@@ -40,7 +40,7 @@ const Index: NextPage = () => {
 		<div className={styles.main}>
 			<Head>
 				<meta property="og:title" content="First Online Public Interlingua-English Translator" />
-				<meta property="og:image" content="./Interlingua Logo Big.png" />
+				<meta property="og:image" content="http://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png" />
 				<meta property="og:description" content="The first online, public, and free Interlingua and English translator." />
 
 				<title>Online Interlingua-English Translator</title>
