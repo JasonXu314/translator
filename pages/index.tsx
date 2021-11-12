@@ -39,28 +39,22 @@ const Index: NextPage = () => {
 	return (
 		<div className={styles.main}>
 			<Head>
-				<title>First Online Public Interlingua-English Translator</title>
-				<meta name="description" content="The first online, public, and free Interlingua and English translator." />
+				<title>Online Interlingua-English Translator</title>
+				<meta name="description" content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses." />
 
-				<meta property="og:url" content="https://translator-f1wyf7ix6-jasonxu.vercel.app/" />
+				<meta property="og:url" content="https://interlingua-translator.vercel.app/" />
 				<meta property="og:type" content="website" />
-				<meta property="og:title" content="First Online Public Interlingua-English Translator" />
-				<meta property="og:description" content="The first online, public, and free Interlingua and English translator." />
+				<meta property="og:title" content="Online Interlingua-English Translator" />
+				<meta property="og:description" content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses." />
 				<meta property="og:image" content="http://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png" />
 
 				<meta name="twitter:card" content="summary_large_image" />
-				<meta property="twitter:domain" content="translator-f1wyf7ix6-jasonxu.vercel.app" />
-				<meta property="twitter:url" content="https://translator-f1wyf7ix6-jasonxu.vercel.app/" />
-				<meta name="twitter:title" content="First Online Public Interlingua-English Translator" />
-				<meta name="twitter:description" content="The first online, public, and free Interlingua and English translator." />
+				<meta property="twitter:domain" content="interlingua-translator.vercel.app" />
+				<meta property="twitter:url" content="https://interlingua-translator.vercel.app/" />
+				<meta name="twitter:title" content="Online Interlingua-English Translator" />
+				<meta name="twitter:description" content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses." />
 				<meta name="twitter:image" content="http://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png" />
 
-
-				<meta property="og:title" content="First Online Public Interlingua-English Translator" />
-				<meta property="og:image" content="http://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png" />
-				<meta property="og:description" content="The first online, public, and free Interlingua and English translator." />
-
-				<title>Online Interlingua-English Translator</title>
 				<meta
 					name="description"
 					content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses."
