@@ -46,14 +46,14 @@ const Index: NextPage = () => {
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content="Online Interlingua-English Translator" />
 				<meta property="og:description" content="The first online, public, and free and open source Interlingua and English translator." />
-				<meta property="og:image" content="http://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png" />
+				<meta property="og:image" content="http://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20With%20Words.png" />
 
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta property="twitter:domain" content="interlingua-translator.vercel.app" />
 				<meta property="twitter:url" content="https://interlingua-translator.vercel.app/" />
 				<meta name="twitter:title" content="Online Interlingua-English Translator" />
 				<meta name="twitter:description" content="The first online, public, and free and open source Interlingua and English translator." />
-				<meta name="twitter:image" content="http://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png" />
+				<meta name="twitter:image" content="http://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20With%20Words.png" />
 
 				<meta
 					name="description"
