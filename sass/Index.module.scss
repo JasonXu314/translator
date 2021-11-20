@@ -4,6 +4,43 @@
 		margin-bottom: 1em;
 	}
 
+	img_logo { width: 100px; height: 100px }
+	.border{ border: 2px solid black; margin: 5px}
+
+	.navbar {
+	overflow: hidden;
+	background-color: #F5F5F5;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	}
+
+	.brand {
+	position: absolute;
+	left: 50%;
+	margin-left: -50px !important;  /* 50% of your logo width */
+	display: block;
+	}
+
+	.navbar a {
+	float: left;
+	color: #272727;
+	display: block;
+	text-align: center;
+	padding: 14px 5px;
+	}
+
+	.navbar a:hover {
+	background: #ddd;
+	color: #272727;
+	}
+
+	.main {
+	padding: 16px;
+	margin-top: 50px;
+	height: 1200px; /* Used in this example to enable scrolling */
+	}
+
 	.lang-row {
 		display: flex;
 		flex-direction: row;
