@@ -48,15 +48,24 @@ const Index: NextPage = () => {
 				<nav className = {styles.navbar}>
 					<div className ={styles.container}>
 						<div className ={styles['navbar-header']}>
-							<a href='#' className={styles['navbar-brand']}> 
+							<a href='/' className={styles['navbar-brand']}> 
 								<img src='https://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png' alt = "Interlingua Corpus Project Logo" width = "95.5px" height= "50px"/>
 							</a>
 						</div>
 
-						<ul className='nav navbar-nav'>
-							<li> <a href='#'> Home </a></li>
+						<ul className={`${styles.nav} ${styles['navbar-nav']}`}>
+							<li> <a href='/'> Home </a></li>
 							<li> <a href='/faq'> FAQ </a></li>
-							<li> <a href='#'> More Resources </a></li>
+							<div className={styles.dropdown}>
+								<button className={styles.dropbtn}>Dropdown
+									<i className={`${styles.fa} ${styles['fa-caret-down']}`}></i>
+								</button>
+								<div className={styles['dropdown-content']}>
+									<a href="#">Link 1</a>
+									<a href="#">Link 2</a>
+									<a href="#">Link 3</a>
+								</div>
+							</div>
 						</ul>
 					</div>
 				</nav>
