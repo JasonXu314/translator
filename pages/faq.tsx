@@ -1,9 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { NextPage } from 'next/types';
+import { useState } from 'react';
 import styles from '../sass/Index.module.scss';
 
 const Index: NextPage = () => {
+	const [open, setOpen] = useState<boolean[]>([false, false, false, false, false, false]);
+
 	return (
 		<div className={styles.main}>
 			<Head>
@@ -103,10 +106,10 @@ const Index: NextPage = () => {
 
 			<tr>
 				<td valign="top">
-					<button type="button" className={styles.collapsible}>
+					<button type="button" className={styles.collapsible} onClick={() => setOpen(open.map((v, i) => (i === 0 ? !v : v)))}>
 						What is interlingua?
 					</button>
-					<div className={styles.content}>
+					<div className={styles.content + (open[0] ? ' ' + styles.shown : '')}>
 						<br></br>
 						Interlingua (ISO 639 language codes ia, ina) is a naturalistic planned Italic international auxiliary language (IAL), developed between
 						1937 and 1951 by the International Auxiliary Language Association (IALA). Its vocabulary and grammar are derived from a wide range of
@@ -117,10 +120,10 @@ const Index: NextPage = () => {
 						<br></br> <br></br>
 					</div>
 
-					<button type="button" className={styles.collapsible}>
+					<button type="button" className={styles.collapsible} onClick={() => setOpen(open.map((v, i) => (i === 1 ? !v : v)))}>
 						What is the purpose of the Interlingua Corpus Project?
 					</button>
-					<div className={styles.content}>
+					<div className={styles.content + (open[1] ? ' ' + styles.shown : '')}>
 						<br></br>
 						The goal of the Interlingua Corpus Project is to aggregate a large collection of Interlingua sentences as a community resource. The
 						sentences in this corpus, including matched pairs of Interlingua-English sentences, are automatically collected from public websites and
@@ -132,19 +135,19 @@ const Index: NextPage = () => {
 						<br></br> <br></br>
 					</div>
 
-					<button type="button" className={styles.collapsible}>
+					<button type="button" className={styles.collapsible} onClick={() => setOpen(open.map((v, i) => (i === 2 ? !v : v)))}>
 						Is there a translator between English and Interlingua?
 					</button>
-					<div className={styles.content}>
+					<div className={styles.content + (open[2] ? ' ' + styles.shown : '')}>
 						<br></br>
 						Yes, there is! You can find a link to it, as well as source code, in the &quot;more resources&quot; tab.
 						<br></br> <br></br>
 					</div>
 
-					<button type="button" className={styles.collapsible}>
+					<button type="button" className={styles.collapsible} onClick={() => setOpen(open.map((v, i) => (i === 3 ? !v : v)))}>
 						What was the process of this project?
 					</button>
-					<div className={styles.content}>
+					<div className={styles.content + (open[3] ? ' ' + styles.shown : '')}>
 						<br></br>
 						Written by Jason Ding on August 14th, 2021<br></br> <br></br>I perform all work on this research project. I am directly supervised by Dr.
 						Todd Mockler, a Principal Investigator at the Danforth Science Center.<br></br> <br></br>
@@ -174,20 +177,20 @@ const Index: NextPage = () => {
 						<br></br> <br></br>
 					</div>
 
-					<button type="button" className={styles.collapsible}>
+					<button type="button" className={styles.collapsible} onClick={() => setOpen(open.map((v, i) => (i === 4 ? !v : v)))}>
 						I have a question/suggestion. Who can I contact?
 					</button>
-					<div className={styles.content}>
+					<div className={styles.content + (open[4] ? ' ' + styles.shown : '')}>
 						<br></br>
 						Please contact <a href="mailto:interlinguacorpus@gmail.com">interlinguacorpus@gmail.com</a> or{' '}
 						<a href="mailto:jasonding@berkeley.com">jasonding@berkeley.com</a> for questions and suggestions.
 						<br></br> <br></br>
 					</div>
 
-					<button type="button" className={styles.collapsible}>
+					<button type="button" className={styles.collapsible} onClick={() => setOpen(open.map((v, i) => (i === 5 ? !v : v)))}>
 						Can I use the data provided by the Interlingua Corpus Project?
 					</button>
-					<div className={styles.content}>
+					<div className={styles.content + (open[5] ? ' ' + styles.shown : '')}>
 						<br></br>
 						The data collected in the corpus and the translator projects can be used for free by anyone. The data from the projects can also be used
 						for anything. However, it is requested that credits or links to the project pages are given.
