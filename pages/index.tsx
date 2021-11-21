@@ -40,10 +40,10 @@ const Index: NextPage = () => {
 	return (
 		<div className={styles.main}>
 			<Head>
-				<tr>
+				{/* <tr>
 					<td valign="top"><img src="https://www.interlinguacorpus.org/Interlingua%Translator%20Logo%20With%20Words.png" alt="Interlingua English Translator" height="150" width="286.5" /> <br></br>
 					</td>
-				</tr>
+				</tr> */}
 
 				<title>Online Interlingua-English Translator</title>
 				<link
