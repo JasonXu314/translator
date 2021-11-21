@@ -54,14 +54,10 @@ const Index: NextPage = () => {
 					src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
 					integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
 					crossOrigin="anonymous"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-					integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-					crossOrigin="anonymous"></script>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
-					integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
-					crossOrigin="anonymous"></script>
-				<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ 				<script src="https://kit.fontawesome.com/a076d05399.js" 
+				 	crossOrigin="anonymous"></script>
+
 				<meta
 					name="description"
 					content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses."
@@ -157,78 +153,6 @@ const Index: NextPage = () => {
 				<textarea rows={8} cols={96} value={output} readOnly />
 			</div>
 			<br></br>
-			<div className={styles.information}>
-				<h2>Information</h2>
-				Interlingua is an international auxiliary language (IAL). IALs, such as Esperanto, are artificial languages that are constructed to simplify
-				communication between speakers who do not share a common first language. Interlingua’s vocabulary and grammar are derived from a combination of
-				different Romance languages. Therefore, many schools and universities teach Interlingua as a way of teaching other Romance languages more easily,
-				and Interlingua has been embraced by parts of the scientific community. <br></br> <br></br>
-				Despite its increasing popularity, Interlingua is not supported by online translation tools such as Google Translate. The purpose of this research
-				project is to bridge this gap, by creating the first computer program that can translate text between English and Interlingua. The hope was that
-				the translation tool would act as a valuable educational resource to Interlingua learners, and it might spread awareness of Interlingua to a
-				broader audience. <br></br>
-			</div>
-			<br></br>
-			<div className={styles.information}>
-				<h2>More Resources</h2>
-				<div className={styles['more-resources']}>
-					<h4>Interlingua Corpus Project</h4>
-					Created by Jason Ding with the help of his mentor, Todd Mockler, the Interlingua Corpus Project has a collection of over 1.2 million
-					quality-controlled Interlingua sentences scraped from an individually-designed web crawler that has visited over 6 million relevant websites,
-					while also providing over 80,000 parallel Interlingua-English sentences and other useful data.
-					<br></br>
-					<a target="_blank" rel="noreferrer noopener" href="http://www.interlinguacorpus.org/">
-						Link to the Interlingua Corpus Project
-					</a>
-					<br></br>
-					<br></br>
-					<h4>Google Colab Interlingua Translator</h4>
-					Created by Jason Ding with the help of his mentor, Todd Mockler, the first online, public, and free Interlingua and English translator was
-					created. This translator uses the strongest Interlingua-English translator model there is to translate in both directions between English and
-					Interlinuga.
-					<br></br>
-					The model has scored a BLEU score of 42.45 going from English to Interlingua and a 42.54 going from Interlingua to English, both of which are
-					&quot;high quality translation&quot; according to one of{' '}
-					<a target="_blank" rel="noreferrer noopener" href="https://cloud.google.com/translate/automl/docs/evaluate">
-						Google&apos;s articles.
-					</a>
-					<br></br>
-					<a target="_blank" rel="noreferrer noopener" href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing">
-						Link to the Google Collab Interlingua-English Translator
-					</a>
-					<br></br>
-					<br></br>
-					<h4>Source Code</h4>
-					All source code and code used in all of the projects will be posted in the following GitHub account.
-					<br></br>
-					<a target="_blank" rel="noreferrer noopener" href="https://github.com/JasonDing9">
-						Link to the GitHub account
-					</a>
-				</div>
-			</div>
-
-			<br></br>
-			<div className={styles.information}>
-				<h2>Credits</h2>
-				<div className={styles['more-resources']}>
-					<ul>
-						<h4>
-							Jason Ding - <i>Lead Project Designer and Computational Linguistics Programmer</i>
-						</h4>
-						<ul>
-							<li>Contact Email: jasonding@berkeley.edu</li>
-							<li>Education: Current student at UC Berkeley (2021 - 2025)</li>
-						</ul>
-						<h4>
-							Todd Mockler - <i>Mentor</i>
-						</h4>
-						<ul>
-							<li>Contact Email: TMockler@danforthcenter.org</li>
-							<li>About: Principal Investigator at the Donald Danforth Plant Science Center</li>
-						</ul>
-					</ul>
-				</div>
-			</div>
 
 			<div className={styles['viewer-counts']}>
 				<div className={styles.regular}>
@@ -244,10 +168,9 @@ const Index: NextPage = () => {
 					<a href="https://github.com/JasonXu314/translator" target="_blank" rel="noreferrer noopener">
 						here
 					</a>
+					<p><i className={["fab fa-github"]}></i><a
+						href="https://github.com/vlexvnder/PersonalWebsite"> See how this site was made</a></p>
 				</div>
-				<p><span><a href="https://github.com/vlexvnder/Morse-Code-Chat"><span
-												className={styles["ui label"]}><i className={styles["black github icon"]}></i>Code</span></a> <a
-											href="/morse"></a></span></p>
 			</div>
 		</div>
 	);
