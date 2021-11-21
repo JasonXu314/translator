@@ -57,6 +57,7 @@ const Index: NextPage = () => {
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
  				<script src="https://kit.fontawesome.com/a076d05399.js" 
 				 	crossOrigin="anonymous"></script>
+				<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 
 				<meta
 					name="description"
