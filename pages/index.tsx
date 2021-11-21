@@ -99,7 +99,7 @@ const Index: NextPage = () => {
 				<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
 			</div>
 			<div className={styles['control-row']}>
-				<textarea rows={12} cols={96} value={input} maxLength={999} onChange={(evt) => setInput(evt.target.value)} />
+				<textarea rows={8} cols={96} value={input} maxLength={999} onChange={(evt) => setInput(evt.target.value)} />
 				<div className={styles['btn-container']}>
 					<Button
 						onClick={() => {
@@ -110,7 +110,7 @@ const Index: NextPage = () => {
 						<img src="/swap.svg" alt="Swap Languages" />
 					</Button>
 				</div>
-				<textarea rows={12} cols={96} value={output} readOnly />
+				<textarea rows={8} cols={96} value={output} readOnly />
 			</div>
 			<br></br>
 			<div className={styles.information}>
