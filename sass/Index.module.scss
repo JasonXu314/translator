@@ -1,11 +1,17 @@
 .main {
+	position: relative;
+	z-index: 0;
+
 	.welcome {
 		padding: 0.25em 20em;
 		margin-bottom: 1em;
+		margin-top: 4em;
 	}
 
-	img_logo { width: 100px; height: 100px }
-	.border{ border: 2px solid black; margin: 5px}
+	.border {
+		border: 2px solid black;
+		margin: 5px;
+	}
 
 	.lang-row {
 		display: flex;
@@ -63,124 +69,124 @@
 	h6 {
 		margin: 0.25em 0;
 	}
-}
 
-.navbar {
-overflow: hidden;
-background-color: #F5F5F5;
-position: fixed;
-top: 0;
-width: 100%;
-}
+	.navbar {
+		overflow: hidden;
+		background-color: #f5f5f5;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 2;
 
-.brand {
-position: absolute;
-left: 50%;
-margin-left: -50px !important;  /* 50% of your logo width */
-display: block;
-}
+		.brand {
+			display: block;
+		}
 
-.navbar a {
-float: left;
-color: #272727;
-display: block;
-text-align: center;
-padding: 14px 5px;
-}
+		a {
+			float: left;
+			color: #272727;
+			display: block;
+			text-align: center;
 
-.navbar a:hover {
-background: #ddd;
-color: #272727;
-}
+			&:not(:first-child) {
+				padding: 14px 5px;
+			}
 
-.main {
-padding: 16px;
-margin-top: 50px;
-height: 1200px; /* Used in this example to enable scrolling */
-}
+			&:hover {
+				background: #ddd;
+				color: #272727;
+			}
+		}
+	}
 
+	.main {
+		padding: 16px;
+		margin-top: 50px;
+		height: 1200px; /* Used in this example to enable scrolling */
+	}
 
-/* The dropdown container */
-.dropdown {
-float: left;
-overflow: hidden;
-}
+	/* The dropdown container */
+	.dropdown {
+		float: left;
+		overflow: hidden;
+	}
 
-/* Dropdown button */
-.dropdown .dropbtn {
-font-size: 16px;
-border: none;
-outline: none;
-color: white;
-padding: 14px 16px;
-background-color: inherit;
-font-family: inherit; /* Important for vertical align on mobile phones */
-margin: 0; /* Important for vertical align on mobile phones */
-}
+	/* Dropdown button */
+	.dropdown .dropbtn {
+		font-size: 16px;
+		border: none;
+		outline: none;
+		color: white;
+		padding: 14px 16px;
+		background-color: inherit;
+		font-family: inherit; /* Important for vertical align on mobile phones */
+		margin: 0; /* Important for vertical align on mobile phones */
+	}
 
+	/* Dropdown content (hidden by default) */
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
+	/* Links inside the dropdown */
+	.dropdown-content a {
+		float: none;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
 
-/* Links inside the dropdown */
-.dropdown-content a {
-float: none;
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-text-align: left;
-}
+	/* Add a grey background color to dropdown links on hover */
+	.dropdown-content a:hover {
+		background-color: #ddd;
+	}
 
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-background-color: #ddd;
-}
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-display: block;
-}
+	.collapsible {
+		background-color: #777;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+	}
 
-.collapsible {
-background-color: #777;
-color: white;
-cursor: pointer;
-padding: 18px;
-width: 100%;
-border: none;
-text-align: left;
-outline: none;
-font-size: 15px;
-}
+	.active,
+	.collapsible:hover {
+		background-color: #555;
+	}
 
-.active, .collapsible:hover {
-background-color: #555;
-}
+	.collapsible:after {
+		content: '\002B';
+		color: white;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
 
-.collapsible:after {
-content: '\002B';
-color: white;
-font-weight: bold;
-float: right;
-margin-left: 5px;
-}
+	.active:after {
+		content: '\2212';
+	}
 
-.active:after {
-content: "\2212";
-}
-
-.content {
-padding: 3px 18px;
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.2s ease-out;
-background-color: #f1f1f1;
+	.content {
+		padding: 3px 18px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		background-color: #f1f1f1;
+	}
 }
