@@ -45,15 +45,15 @@ const Index: NextPage = () => {
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"></script>
 			
 			<Head>
-				<nav className='navbar'>
-					<div className='container'>
-						<div className='navbar-header'>
-							<a href='#' className='navbar-brand'> 
-								<img src='https://www.interlinguacorpus.org/Interlingua%20Corpus%20Logo%20Big.png' alt = "Interlingua Corpus Project Logo" width = "95.5px" height= "50px" className="vertical-align:middle;margin:-15px 0px"/>
+				<nav className={styles.navbar}>
+					<div className={styles.container}>
+						<div className={styles.navbar}>
+							<a href='#' className={styles.navbar}> 
+								<img src='https://www.interlinguacorpus.org/Interlingua%20Corpus%20Logo%20Big.png' alt = "Interlingua Corpus Project Logo" width = "95.5px" height= "50px"/>
 							</a>
 						</div>
 
-						<ul className='nav navbar-nav'>
+						<ul className={styles.navbar}>
 							<li> <a href='#'> Home </a></li>
 							<li> <a href='#'> FAQ </a></li>
 							<li> <a href='#'> More Resources </a></li>
