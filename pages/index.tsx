@@ -53,19 +53,10 @@ const Index: NextPage = () => {
 							</a>
 						</div>
 
-						<ul className={`${styles.nav} ${styles['navbar-nav']}`}>
+						<ul className='nav navbar-nav'>
 							<li> <a href='/'> Home </a></li>
 							<li> <a href='/faq'> FAQ </a></li>
-							<div className={styles.dropdown}>
-								<button className={styles.dropbtn}>Dropdown
-									<i className={`${styles.fa} ${styles['fa-caret-down']}`}></i>
-								</button>
-								<div className={styles['dropdown-content']}>
-									<a href="#">Link 1</a>
-									<a href="#">Link 2</a>
-									<a href="#">Link 3</a>
-								</div>
-							</div>
+							<li> <a href='#'> More Resources </a></li>
 						</ul>
 					</div>
 				</nav>
