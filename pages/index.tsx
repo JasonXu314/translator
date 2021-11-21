@@ -54,6 +54,14 @@ const Index: NextPage = () => {
 					src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
 					integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
 					crossOrigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+					integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+					crossOrigin="anonymous"></script>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+					integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+					crossOrigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 				<meta
 					name="description"
 					content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses."
@@ -94,8 +102,8 @@ const Index: NextPage = () => {
 							<img
 								src="https://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png"
 								alt="Interlingua Corpus Project Logo"
-								width="76.4px"
-								height="40px"
+								width="95.5px"
+								height="50px"
 							/>
 						</a>
 					</div>
@@ -125,7 +133,7 @@ const Index: NextPage = () => {
 				</div>
 			</nav>
 			<div className={styles.welcome}>
-				<h1>Online Interlingua-English Translator</h1>
+				<h1><b>Online Interlingua-English Translator</b></h1>
 				Welcome to the first online, public, and free and open source Interlingua and English translator! Input your text in the left text box and the
 				translated sentence will be shown in the right text box. Click the &quot;Change Language&quot; button below to change the translator&apos;s
 				direction.
@@ -237,6 +245,9 @@ const Index: NextPage = () => {
 						here
 					</a>
 				</div>
+				<p><span><a href="https://github.com/vlexvnder/Morse-Code-Chat"><span
+												className={styles["ui label"]}><i className={styles["black github icon"]}></i>Code</span></a> <a
+											href="/morse"></a></span></p>
 			</div>
 		</div>
 	);
