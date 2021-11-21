@@ -207,3 +207,37 @@
 		}
 	}
 }
+
+.icon-github:before {
+	content: "\f09b";
+  font-family: 'FontAwesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+a:link {
+	text-decoration: none;
+	color: #309EB7;
+}
+  
+a:visited {
+	text-decoration: none;
+	color: #309EB7;
+}
+  
+a:hover {
+	text-decoration: none;
+	color: #309EB7;
+}
+  
+a:active {
+	text-decoration: none;
+	color: #309EB7;
+}
+
