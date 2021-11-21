@@ -190,14 +190,14 @@ const Index: NextPage = () => {
 						</div>
 					</td>
 				</tr>
-			</div>
 
-			<tr>
-				<td valign="top" align="justify">
-					<hr></hr>
-					Please email <a href="mailto:interlinguacorpus@gmail.com">interlinguacorpus@gmail.com</a> for questions and suggestions.
-				</td>
-			</tr>
+				<tr>
+					<td valign="top" align="justify">
+						<hr></hr>
+						Please email <a href="mailto:interlinguacorpus@gmail.com">interlinguacorpus@gmail.com</a> for questions and suggestions.
+					</td>
+				</tr>
+			</div>
 
 			<div className={styles['viewer-counts']}>
 				<div className={styles.regular}>
