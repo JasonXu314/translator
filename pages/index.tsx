@@ -103,7 +103,7 @@ const Index: NextPage = () => {
 					<ul className="nav navbar-nav">
 						<li>
 							<Link href="/">
-								<a> Home </a>
+								<a> Interlingua-English Translator </a>
 							</Link>
 						</li>
 						<li>
@@ -112,8 +112,13 @@ const Index: NextPage = () => {
 							</Link>
 						</li>
 						<li>
-							<Link href="#">
+							<Link href="/more-resources">
 								<a> More Resources </a>
+							</Link>
+						</li>
+						<li>
+							<Link href="/creators">
+								<a> Creators </a>
 							</Link>
 						</li>
 					</ul>
