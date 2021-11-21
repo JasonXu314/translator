@@ -55,7 +55,7 @@ const Index: NextPage = () => {
 
 						<ul className='nav navbar-nav'>
 							<li> <a href='#'> Home </a></li>
-							<li> <a href='/faq'> FAQ </a></li>
+							<li> <a href='#'> FAQ </a></li>
 							<li> <a href='#'> More Resources </a></li>
 						</ul>
 					</div>
@@ -89,32 +89,12 @@ const Index: NextPage = () => {
 				<meta name="author" content="Jason Ding, Jason Xu" />
 			</Head>
 			<div className={styles.welcome}>
-				<h1>Online Interlingua-English Translator</h1>
-				Welcome to the first online, public, and free and open source Interlingua and English translator! Input your text in the left text box and the
-				translated sentence will be shown in the right text box. Click the &quot;Change Language&quot; button below to change the translator&apos;s
-				direction.
+				<h1>Frequently Asked Questions</h1>
 			</div>
-			<div className={styles['lang-row']}>
-				<h4 className={styles.lang}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-				<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-			</div>
-			<div className={styles['control-row']}>
-				<textarea rows={8} cols={96} value={input} maxLength={999} onChange={(evt) => setInput(evt.target.value)} />
-				<div className={styles['btn-container']}>
-					<Button
-						onClick={() => {
-							setInputLang(inputLang === 'eng' ? 'ina' : 'eng');
-							setInput(output);
-							setOutput('');
-						}}>
-						<img src="/swap.svg" alt="Swap Languages" />
-					</Button>
-				</div>
-				<textarea rows={8} cols={96} value={output} readOnly />
-			</div>
+
 			<br></br>
 			<div className={styles.information}>
-				<h2>Information</h2>
+				<h3>What is interlingua?</h3>
 				Interlingua is an international auxiliary language (IAL). IALs, such as Esperanto, are artificial languages that are constructed to simplify
 				communication between speakers who do not share a common first language. Interlingua’s vocabulary and grammar are derived from a combination of
 				different Romance languages. Therefore, many schools and universities teach Interlingua as a way of teaching other Romance languages more easily,
@@ -123,67 +103,6 @@ const Index: NextPage = () => {
 				project is to bridge this gap, by creating the first computer program that can translate text between English and Interlingua. The hope was that
 				the translation tool would act as a valuable educational resource to Interlingua learners, and it might spread awareness of Interlingua to a
 				broader audience. <br></br>
-			</div>
-			<br></br>
-			<div className={styles.information}>
-				<h2>More Resources</h2>
-				<div className={styles['more-resources']}>
-					<h4>Interlingua Corpus Project</h4>
-					Created by Jason Ding with the help of his mentor, Todd Mockler, the Interlingua Corpus Project has a collection of over 1.2 million
-					quality-controlled Interlingua sentences scraped from an individually-designed web crawler that has visited over 6 million relevant websites,
-					while also providing over 80,000 parallel Interlingua-English sentences and other useful data.
-					<br></br>
-					<a target="_blank" rel="noreferrer noopener" href="http://www.interlinguacorpus.org/">
-						Link to the Interlingua Corpus Project
-					</a>
-					<br></br>
-					<br></br>
-					<h4>Google Colab Interlingua Translator</h4>
-					Created by Jason Ding with the help of his mentor, Todd Mockler, the first online, public, and free Interlingua and English translator was
-					created. This translator uses the strongest Interlingua-English translator model there is to translate in both directions between English and
-					Interlinuga.
-					<br></br>
-					The model has scored a BLEU score of 42.45 going from English to Interlingua and a 42.54 going from Interlingua to English, both of which are
-					&quot;high quality translation&quot; according to one of{' '}
-					<a target="_blank" rel="noreferrer noopener" href="https://cloud.google.com/translate/automl/docs/evaluate">
-						Google&apos;s articles.
-					</a>
-					<br></br>
-					<a target="_blank" rel="noreferrer noopener" href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing">
-						Link to the Google Collab Interlingua-English Translator
-					</a>
-					<br></br>
-					<br></br>
-					<h4>Source Code</h4>
-					All source code and code used in all of the projects will be posted in the following GitHub account.
-					<br></br>
-					<a target="_blank" rel="noreferrer noopener" href="https://github.com/JasonDing9">
-						Link to the GitHub account
-					</a>
-				</div>
-			</div>
-
-			<br></br>
-			<div className={styles.information}>
-				<h2>Credits</h2>
-				<div className={styles['more-resources']}>
-					<ul>
-						<h4>
-							Jason Ding - <i>Lead Project Designer and Computational Linguistics Programmer</i>
-						</h4>
-						<ul>
-							<li>Contact Email: jasonding@berkeley.edu</li>
-							<li>Education: Current student at UC Berkeley (2021 - 2025)</li>
-						</ul>
-						<h4>
-							Todd Mockler - <i>Mentor</i>
-						</h4>
-						<ul>
-							<li>Contact Email: TMockler@danforthcenter.org</li>
-							<li>About: Principal Investigator at the Donald Danforth Plant Science Center</li>
-						</ul>
-					</ul>
-				</div>
 			</div>
 
 			<div className={styles['viewer-counts']}>
