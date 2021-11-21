@@ -40,6 +40,11 @@ const Index: NextPage = () => {
 	return (
 		<div className={styles.main}>
 			<Head>
+				<tr>
+					<td valign="top"><img src="https://www.interlinguacorpus.org/Interlingua%Translator%20Logo%20With%20Words.png" alt="Interlingua English Translator" height="150" width="286.5" /> <br></br>
+					</td>
+				</tr>
+
 				<title>Online Interlingua-English Translator</title>
 				<link
 					rel="stylesheet"
@@ -170,7 +175,7 @@ const Index: NextPage = () => {
 						here
 					</a>
 					<p><i className={styles['icon-github']}></i><a
-						href="https://github.com/vlexvnder/PersonalWebsite"> See how this site was made</a></p>
+						href="https://github.com/JasonXu314/translator"> See how this site was made</a></p>
 				</div>
 			</div>
 		</div>
