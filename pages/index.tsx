@@ -38,22 +38,22 @@ const Index: NextPage = () => {
 
 	return (
 		<div className={styles.main}>
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"></link>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossOrigin="anonymous"></link>
 
-			<script  src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+			<script  src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossOrigin="anonymous"></script>
 
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossOrigin="anonymous"></script>
 			
 			<Head>
-				<nav class='navbar'>
-					<div class='container'>
-						<div class='navbar-header'>
-							<a href='#' class='navbar-brand'> 
-								<img src='https://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png' alt = "Interlingua Corpus Project Logo" width = "95.5px" height= "50px" style="vertical-align:middle;margin:-15px 0px"/>
+				<nav className='navbar'>
+					<div className='container'>
+						<div className='navbar-header'>
+							<a href='#' className='navbar-brand'> 
+								<img src='https://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png' alt = "Interlingua Corpus Project Logo" width = "95.5px" height= "50px"/>
 							</a>
 						</div>
 
-						<ul class='nav navbar-nav'>
+						<ul className='nav navbar-nav'>
 							<li> <a href='#'> Home </a></li>
 							<li> <a href='#'> FAQ </a></li>
 							<li> <a href='#'> More Resources </a></li>
