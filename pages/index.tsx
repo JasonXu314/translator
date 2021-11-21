@@ -168,7 +168,7 @@ const Index: NextPage = () => {
 					<a href="https://github.com/JasonXu314/translator" target="_blank" rel="noreferrer noopener">
 						here
 					</a>
-					<p><i className={["fab fa-github"]}></i><a
+					<p><i className={styles["fab fa-github"]}></i><a
 						href="https://github.com/vlexvnder/PersonalWebsite"> See how this site was made</a></p>
 				</div>
 			</div>
