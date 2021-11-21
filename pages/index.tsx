@@ -94,8 +94,8 @@ const Index: NextPage = () => {
 							<img
 								src="https://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png"
 								alt="Interlingua Corpus Project Logo"
-								width="95.5px"
-								height="50px"
+								width="76.4px"
+								height="40px"
 							/>
 						</a>
 					</div>

@@ -127,8 +127,6 @@ const Index: NextPage = () => {
 			<div className={styles.welcome}>
 				<h1><b>Creators</b></h1>
 			</div>
-
-			<br></br>
 			<div className={styles.information}>
 				<h2>Credits</h2>
 				<div className={styles['more-resources']}>

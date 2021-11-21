@@ -125,7 +125,7 @@ const Index: NextPage = () => {
 				</div>
 			</nav>
 			<div className={styles.welcome}>
-				<h1>More Resources</h1>
+				<h1><b>More Resources</b></h1>
 			</div>
 			
 			<div className={styles.information}>
