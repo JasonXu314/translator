@@ -130,6 +130,10 @@ const Index: NextPage = () => {
 				translated sentence will be shown in the right text box. Click the &quot;Change Language&quot; button below to change the translator&apos;s
 				direction.
 			</div>
+
+			<br></br>
+			<br></br>
+
 			<div className={styles['lang-row']}>
 				<h4 className={styles.lang}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
 				<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
@@ -148,6 +152,9 @@ const Index: NextPage = () => {
 				</div>
 				<textarea rows={8} cols={96} value={output} readOnly />
 			</div>
+
+			<br></br>
+			<br></br>
 
 			<div className={styles['viewer-counts']}>
 				<hr></hr>
