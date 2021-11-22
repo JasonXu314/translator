@@ -137,7 +137,7 @@ const Index: NextPage = () => {
 						Interlingua and English translator was created. This translator uses a smaller version of the model 
 						in Google Colab, but provides a user-interface similar to that of other online translators, 
 						such as Google Translate.<br></br> <br></br>
-						<a href="https://interlingua-translator.vercel.app/" className={styles['special-a']}><i className={styles["icon-translator"]}></i> Link to the Interlingua-English Translator</a>
+						&nbsp;&nbsp;&nbsp;<a href="https://interlingua-translator.vercel.app/" className={styles['special-a']}><i className={styles["icon-translator"]}></i> Link to the Interlingua-English Translator</a>
 					<br></br>
 
 					<hr></hr>
@@ -150,14 +150,14 @@ const Index: NextPage = () => {
 						The model has scored a BLEU score of 42.45 going from English to Interlingua and a 42.54 going from
 						Interlingua to English, both of which are "high quality translation" according to one of <a href="https://cloud.google.com/translate/automl/docs/evaluate" className={styles["special-a"]}>Google's
 						articles.</a><br></br> <br></br>
-						<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing" className={styles["special-a"]}><i className={styles["icon-google"]}></i> Link to the Google Colab Interlingua-English Translator</a>
+						&nbsp;&nbsp;&nbsp;<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing" className={styles["special-a"]}><i className={styles["icon-google"]}></i> Link to the Google Colab Interlingua-English Translator</a>
 					<br></br>
 
 					<hr></hr>
 
 					<h4>Source Code</h4>
 						All source code and code used in all of the projects will be posted in the following GitHub account.<br></br> <br></br>
-						<a href="https://github.com/JasonDing9" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Link to the GitHub account</a>
+						&nbsp;&nbsp;&nbsp;<a href="https://github.com/JasonDing9" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Link to the GitHub account</a>
 				</div>
 			</div>
 
