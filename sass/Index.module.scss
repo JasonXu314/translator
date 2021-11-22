@@ -186,19 +186,40 @@
 		padding: 3px 18px;
 		max-height: 0;
 		overflow: hidden;
-		transition: max-height 0.2s ease-out;
+		transition: max-height 0.25s ease-out;
 		background-color: #f1f1f1;
 
 		&.shown {
-			max-height: unset;
+			&.content-0 {
+				max-height: 206px;
+			}
+
+			&.content-1 {
+				max-height: 226px;
+			}
+
+			&.content-2 {
+				max-height: 66px;
+			}
+
+			&.content-3 {
+				max-height: 866px;
+			}
+
+			&.content-4 {
+				max-height: 86px;
+			}
+
+			&.content-5 {
+				max-height: 106px;
+			}
 		}
 	}
 }
 
 .icon-github:before {
-	content: "\f09b";
-    font-family: 'FontAwesome';
-	speak: none;
+	content: '\f09b';
+	font-family: 'FontAwesome';
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -209,9 +230,8 @@
 }
 
 .icon-google:before {
-	content: "\f1a0";
-    font-family: 'FontAwesome';
-	speak: none;
+	content: '\f1a0';
+	font-family: 'FontAwesome';
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
