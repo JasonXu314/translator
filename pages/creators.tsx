@@ -172,7 +172,7 @@ const Index: NextPage = () => {
 
 					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Github</a> <br></br>
 					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-linkedin"]}></i> LinkedIn</a> <br></br>
-					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-email"]}></i> jasonding@berkeley.edu</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-email"]}></i> Email</a> <br></br>
 					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-globe"]}></i> Personal Website</a> <br></br>
 				<br></br>
 

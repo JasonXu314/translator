@@ -149,9 +149,9 @@ const Index: NextPage = () => {
 				<textarea rows={8} cols={96} value={output} readOnly />
 			</div>
 
-			<hr></hr>
-
 			<div className={styles['viewer-counts']}>
+				<hr></hr>
+
 				<div className={styles.regular}>
 					This site has been visited{' '}
 					<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=3&type=page&initCount=0" alt="web counter" /> times
