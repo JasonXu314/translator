@@ -126,6 +126,7 @@ const Index: NextPage = () => {
 				<h1>
 					<b>Online Interlingua-English Translator</b>
 				</h1>
+				<br></br>
 				Welcome to the first online, public, and free and open source Interlingua and English translator! Input your text in the left text box and the
 				translated sentence will be shown in the right text box. Click the &quot;Change Language&quot; button below to change the translator&apos;s
 				direction.
