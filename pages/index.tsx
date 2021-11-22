@@ -47,17 +47,11 @@ const Index: NextPage = () => {
 					integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
 					crossOrigin="anonymous"></link>
 				<script
-					src="http://code.jquery.com/jquery-3.3.1.js"
-					integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-					crossOrigin="anonymous"></script>
-				<script
 					src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
 					integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
 					crossOrigin="anonymous"></script>
- 				<script src="https://kit.fontawesome.com/a076d05399.js" 
-				 	crossOrigin="anonymous"></script>
+				<script src="https://kit.fontawesome.com/a076d05399.js" crossOrigin="anonymous"></script>
 				<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
 				<meta
 					name="description"
 					content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses."
@@ -129,7 +123,9 @@ const Index: NextPage = () => {
 				</div>
 			</nav>
 			<div className={styles.welcome}>
-				<h1><b>Online Interlingua-English Translator</b></h1>
+				<h1>
+					<b>Online Interlingua-English Translator</b>
+				</h1>
 				Welcome to the first online, public, and free and open source Interlingua and English translator! Input your text in the left text box and the
 				translated sentence will be shown in the right text box. Click the &quot;Change Language&quot; button below to change the translator&apos;s
 				direction.
@@ -160,10 +156,15 @@ const Index: NextPage = () => {
 					<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=3&type=page&initCount=0" alt="web counter" /> times
 				</div>
 				<div>
-					<p><i className={styles['icon-github']}></i><a
-						href="https://github.com/JasonXu314/translator"> See how this site was made</a> <br></br>
-					<i className={styles['icon-google']}></i><a
-						href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing"> See the Google Colab source code for the translator</a></p>
+					<p>
+						<i className={styles['icon-github']}></i>
+						<a href="https://github.com/JasonXu314/translator"> See how this site was made</a> <br></br>
+						<i className={styles['icon-google']}></i>
+						<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing">
+							{' '}
+							See the Google Colab source code for the translator
+						</a>
+					</p>
 				</div>
 			</div>
 		</div>
