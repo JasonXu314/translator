@@ -241,6 +241,70 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+.icon-translator:before { 
+	content: "\f1ab";
+	font-family: 'FontAwesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: -20px; 
+	margin-right: 10px; 
+	color: black;
+}
+
+.icon-linkedin:before { 
+	content: "\f08c";
+	font-family: 'FontAwesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: -20px; 
+	margin-right: 10px; 
+	color: black;
+}
+
+.icon-email:before { 
+	content: "\f0e0";
+	font-family: 'FontAwesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: -20px; 
+	margin-right: 10px; 
+	color: black;
+}
+
+.icon-globe:before { 
+	content: "\f0ac";
+	font-family: 'FontAwesome';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: -20px; 
+	margin-right: 10px; 
+	color: black;
+}
+
 .collapsible {
     background-color: #777;
     color: white;

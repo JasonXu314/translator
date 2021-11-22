@@ -132,38 +132,32 @@ const Index: NextPage = () => {
 			
 			<div className={styles.information}>
 				<div className={styles['more-resources']}>
-					<h4>Interlingua Corpus Project</h4>
-					Created by Jason Ding with the help of his mentor, Todd Mockler, the Interlingua Corpus Project has a collection of over 1.2 million
-					quality-controlled Interlingua sentences scraped from an individually-designed web crawler that has visited over 6 million relevant websites,
-					while also providing over 80,000 parallel Interlingua-English sentences and other useful data.
+					<h4>Online Interlingua Translator</h4>
+						Created by Jason Ding with the help of his mentor, Todd Mockler, the first online, public, and free and open source
+						Interlingua and English translator was created. This translator uses a smaller version of the model 
+						in Google Colab, but provides a user-interface similar to that of other online translators, 
+						such as Google Translate.<br></br> <br></br>
+						&nbsp &nbsp &nbsp &nbsp <a href="https://interlingua-translator.vercel.app/" className={styles['special-a']}><i className={styles["icon-translator"]}></i> Link to the Interlingua-English Translator</a>
 					<br></br>
-					<a target="_blank" rel="noreferrer noopener" href="http://www.interlinguacorpus.org/">
-						Link to the Interlingua Corpus Project
-					</a>
-					<br></br>
-					<br></br>
+
+					<hr></hr>
+
 					<h4>Google Colab Interlingua Translator</h4>
-					Created by Jason Ding with the help of his mentor, Todd Mockler, the first online, public, and free Interlingua and English translator was
-					created. This translator uses the strongest Interlingua-English translator model there is to translate in both directions between English and
-					Interlinuga.
+						Created by Jason Ding with the help of his mentor, Todd Mockler, the first online, public, and free and 
+						open source Interlingua and English translator was created. This translator uses the strongest Interlingua-English 
+						translator model there is to translate in both directions between English and Interlinuga.<br></br> <br></br>
+
+						The model has scored a BLEU score of 42.45 going from English to Interlingua and a 42.54 going from
+						Interlingua to English, both of which are "high quality translation" according to one of <a href="https://cloud.google.com/translate/automl/docs/evaluate" className={styles["special-a"]}>Google's
+						articles.</a><br></br> <br></br>
+						&nbsp &nbsp &nbsp &nbsp <a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing" className={styles["special-a"]}><i className={styles["icon-google"]}></i> Link to the Google Colab Interlingua-English Translator</a>
 					<br></br>
-					The model has scored a BLEU score of 42.45 going from English to Interlingua and a 42.54 going from Interlingua to English, both of which are
-					&quot;high quality translation&quot; according to one of{' '}
-					<a target="_blank" rel="noreferrer noopener" href="https://cloud.google.com/translate/automl/docs/evaluate">
-						Google&apos;s articles.
-					</a>
-					<br></br>
-					<a target="_blank" rel="noreferrer noopener" href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing">
-						Link to the Google Collab Interlingua-English Translator
-					</a>
-					<br></br>
-					<br></br>
+
+					<hr></hr>
+
 					<h4>Source Code</h4>
-					All source code and code used in all of the projects will be posted in the following GitHub account.
-					<br></br>
-					<a target="_blank" rel="noreferrer noopener" href="https://github.com/JasonDing9">
-						Link to the GitHub account
-					</a>
+						All source code and code used in all of the projects will be posted in the following GitHub account.<br></br> <br></br>
+						&nbsp &nbsp &nbsp &nbsp <a href="https://github.com/JasonDing9" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Link to the GitHub account</a>
 				</div>
 			</div>
 
