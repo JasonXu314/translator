@@ -154,11 +154,7 @@ const Index: NextPage = () => {
 				<div className={styles.regular}>
 					This site has been visited{' '}
 					<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=3&type=page&initCount=0" alt="web counter" /> times
-				</div>
-				<div className={styles.unique}>
-					This site has been visited by{' '}
-					<img src="https://hitwebcounter.com/counter/counter.php?page=7856188&style=0008&nbdigits=3&type=ip&initCount=0" alt="web counter" /> people
-				</div>
+				</div>	
 				<div>
 					This website&apos;s source can be found{' '}
 					<a href="https://github.com/JasonXu314/translator" target="_blank" rel="noreferrer noopener">
