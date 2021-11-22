@@ -160,6 +160,8 @@ const Index: NextPage = () => {
 					&nbsp;&nbsp;&nbsp;<a href="mailto:TMockler@danforthcenter.org" className={styles["special-a"]}><i className={styles["icon-email"]}></i> TMockler@danforthcenter.org</a> <br></br>
 				<br></br>
 
+				<hr></hr>
+
 				<h2>Jason Xu</h2>
 					<h4>Something </h4>
 

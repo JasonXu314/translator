@@ -147,9 +147,9 @@ const Index: NextPage = () => {
 					</Button>
 				</div>
 				<textarea rows={8} cols={96} value={output} readOnly />
-
-				<hr></hr>
 			</div>
+
+			<hr></hr>
 
 			<div className={styles['viewer-counts']}>
 				<div className={styles.regular}>
