@@ -123,6 +123,14 @@ const Index: NextPage = () => {
 				</div>
 			</nav>
 			<div className={styles.welcome}>
+				<tr image-align="center">
+                    <td valign="top">
+                        <a href='/'> 
+                            <img src="https://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png" alt="Interlingua English Translator" height="150" width="286.5" /	> <br></br>
+                        </a>
+                    </td>
+                </tr>
+
 				<h1>
 					<b>Online Interlingua-English Translator</b>
 				</h1>
