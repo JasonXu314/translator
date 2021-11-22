@@ -150,6 +150,8 @@ const Index: NextPage = () => {
 			</div>
 			<br></br>
 
+			<hr></hr>
+
 			<div className={styles['viewer-counts']}>
 				<div className={styles.regular}>
 					This site has been visited{' '}

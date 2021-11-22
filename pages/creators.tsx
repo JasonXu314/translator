@@ -129,27 +129,39 @@ const Index: NextPage = () => {
 			<div className={styles.welcome}>
 				<h1><b>Creators</b></h1>
 			</div>
+
 			<div className={styles.information}>
-				<h2>Credits</h2>
-				<div className={styles['more-resources']}>
+				<h2>Jason Ding</h2>
+					<h4>Lead Project Designer and Computational Linguistics Programmer </h4>
+
+					Roles:
 					<ul>
-						<h4>
-							Jason Ding - <i>Lead Project Designer and Computational Linguistics Programmer</i>
-						</h4>
-						<ul>
-							<li>Contact Email: jasonding@berkeley.edu</li>
-							<li>Education: Current student at UC Berkeley (2021 - 2025)</li>
-						</ul>
-						<h4>
-							Todd Mockler - <i>Mentor</i>
-						</h4>
-						<ul>
-							<li>Contact Email: TMockler@danforthcenter.org</li>
-							<li>About: Principal Investigator at the Donald Danforth Plant Science Center</li>
-						</ul>
+						<li> Created programs to gather the Interlingua Corpus </li>
+						<li> Built the Interlingua-Engish Translator </li>
+						<li> Designed and coded the Interlingua Corpus and Translator websites </li>
 					</ul>
-				</div>
+
+					&nbsp;&nbsp;&nbsp;<a href="https://github.com/JasonDing9" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Github</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/jasonding9/" className={styles["special-a"]}><i className={styles["icon-linkedin"]}></i> LinkedIn</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="mailto:jasonding@berkeley.edu" className={styles["special-a"]}><i className={styles["icon-email"]}></i> jasonding@berkeley.edu</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-globe"]}></i> Personal Website</a> <br></br>
+				<br></br>
+
+				<hr></hr>
+
+				<h2>Todd Mockler</h2>
+					<h4>Mentor </h4>
+
+					Roles:
+					<ul>
+						<li> Guided the Interlingua projects into fruition </li>
+					</ul>
+
+					&nbsp;&nbsp;&nbsp;<a href="mailto:TMockler@danforthcenter.org" className={styles["special-a"]}><i className={styles["icon-email"]}></i> TMockler@danforthcenter.org</a> <br></br>
+				<br></br>
 			</div>
+
+			<hr></hr>
 
 			<div className={styles['viewer-counts']}>
 				<div className={styles.regular}>
