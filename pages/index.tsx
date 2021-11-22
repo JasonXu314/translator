@@ -122,52 +122,57 @@ const Index: NextPage = () => {
 					</ul>
 				</div>
 			</nav>
-			<div className={styles.welcome}>
-				<h1>
-					<b>Online Interlingua-English Translator</b>
-				</h1>
-				<br></br>
-				Welcome to the first online, public, and free and open source Interlingua and English translator! Input your text in the left text box and the
-				translated sentence will be shown in the right text box. Click the &quot;Change Language&quot; button below to change the translator&apos;s
-				direction.
-			</div>
 
-			<div className={styles['lang-row']}>
-				<h4 className={styles.lang}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-				<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-			</div>
-			<div className={styles['control-row']}>
-				<textarea rows={8} cols={96} value={input} maxLength={999} onChange={(evt) => setInput(evt.target.value)} />
-				<div className={styles['btn-container']}>
-					<Button
-						onClick={() => {
-							setInputLang(inputLang === 'eng' ? 'ina' : 'eng');
-							setInput(output);
-							setOutput('');
-						}}>
-						<img src="/swap.svg" alt="Swap Languages" />
-					</Button>
-				</div>
-				<textarea rows={8} cols={96} value={output} readOnly />
-			</div>
+			<table width="60%" justify-content="center" align-items="center" cellSpacing="2" cellPadding="2">
+				<tbody>
+					<div className={styles.welcome}>
+						<h1>
+							<b>Online Interlingua-English Translator</b>
+						</h1>
+						<br></br>
+						Welcome to the first online, public, and free and open source Interlingua and English translator! Input your text in the left text box and the
+						translated sentence will be shown in the right text box. Click the &quot;Change Language&quot; button below to change the translator&apos;s
+						direction.
+					</div>
 
-			<br></br>
-			<br></br>
+					<div className={styles['lang-row']}>
+						<h4 className={styles.lang}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
+						<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
+					</div>
+					<div className={styles['control-row']}>
+						<textarea rows={8} cols={96} value={input} maxLength={999} onChange={(evt) => setInput(evt.target.value)} />
+						<div className={styles['btn-container']}>
+							<Button
+								onClick={() => {
+									setInputLang(inputLang === 'eng' ? 'ina' : 'eng');
+									setInput(output);
+									setOutput('');
+								}}>
+								<img src="/swap.svg" alt="Swap Languages" />
+							</Button>
+						</div>
+						<textarea rows={8} cols={96} value={output} readOnly />
+					</div>
 
-			<div className={styles['viewer-counts']}>
-				<hr></hr>
+					<br></br>
+					<br></br>
 
-				<div className={styles.regular}>
-					This site has been visited{' '}
-					<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=3&type=page&initCount=0" alt="web counter" /> times
-				</div>
-				<div>
-					<p><a href="https://github.com/JasonXu314/translator">
-						<i className={styles['icon-github']}></i> See how this site was made</a> <br></br>
-					<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing"> 
-						<i className={styles['icon-google']}></i> See the Google Colab source code for the translator</a></p>
-				</div>
-			</div>
+					<div className={styles['viewer-counts']}>
+						<hr></hr>
+
+						<div className={styles.regular}>
+							This site has been visited{' '}
+							<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=3&type=page&initCount=0" alt="web counter" /> times
+						</div>
+						<div>
+							<p><a href="https://github.com/JasonXu314/translator">
+								<i className={styles['icon-github']}></i> See how this site was made</a> <br></br>
+							<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing"> 
+								<i className={styles['icon-google']}></i> See the Google Colab source code for the translator</a></p>
+						</div>
+					</div>
+				</tbody>
+			</table>
 		</div>
 	);
 };
