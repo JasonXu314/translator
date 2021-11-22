@@ -161,7 +161,7 @@ const Index: NextPage = () => {
 				</div>
 				<div>
 					<p><i className={styles['icon-github']}></i><a
-						href="https://github.com/JasonXu314/translator"> See how this site was made</a>
+						href="https://github.com/JasonXu314/translator"> See how this site was made</a> <br></br>
 					<i className={styles['icon-google']}></i><a
 						href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing"> See the Google Colab source code for the translator</a></p>
 				</div>
