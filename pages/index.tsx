@@ -132,9 +132,6 @@ const Index: NextPage = () => {
 				direction.
 			</div>
 
-			<br></br>
-			<br></br>
-
 			<div className={styles['lang-row']}>
 				<h4 className={styles.lang}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
 				<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
