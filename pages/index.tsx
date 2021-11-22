@@ -126,7 +126,7 @@ const Index: NextPage = () => {
 				<tr image-align="center">
                     <td valign="top">
                         <a href='/'> 
-                            <img src="https://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20Big.png" alt="Interlingua English Translator" height="150" width="286.5" /	> <br></br>
+                            <img src="https://www.interlinguacorpus.org/Interlingua%20Translator%20Logo%20With%20Words.png" alt="Interlingua English Translator" height="150" width="286.5" /> <br></br>
                         </a>
                     </td>
                 </tr>
