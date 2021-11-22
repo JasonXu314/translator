@@ -159,9 +159,9 @@ const Index: NextPage = () => {
 						All source code and code used in all of the projects will be posted in the following GitHub account.<br></br> <br></br>
 						&nbsp;&nbsp;&nbsp;<a href="https://github.com/JasonDing9" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Link to the GitHub account</a>
 				</div>
-			</div>
 
-			<hr></hr>
+				<hr></hr>
+			</div>
 
 			<div className={styles['viewer-counts']}>
 				<div className={styles.regular}>

@@ -159,9 +159,23 @@ const Index: NextPage = () => {
 
 					&nbsp;&nbsp;&nbsp;<a href="mailto:TMockler@danforthcenter.org" className={styles["special-a"]}><i className={styles["icon-email"]}></i> TMockler@danforthcenter.org</a> <br></br>
 				<br></br>
-			</div>
 
-			<hr></hr>
+				<h2>Jason Xu</h2>
+					<h4>Something </h4>
+
+					Roles:
+					<ul>
+						<li> Something </li>
+					</ul>
+
+					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Github</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-linkedin"]}></i> LinkedIn</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-email"]}></i> jasonding@berkeley.edu</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-globe"]}></i> Personal Website</a> <br></br>
+				<br></br>
+
+				<hr></hr>
+			</div>
 
 			<div className={styles['viewer-counts']}>
 				<div className={styles.regular}>
