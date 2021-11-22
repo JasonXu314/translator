@@ -56,7 +56,7 @@ const Index: NextPage = () => {
 					crossOrigin="anonymous"></script>
  				<script src="https://kit.fontawesome.com/a076d05399.js" 
 				 	crossOrigin="anonymous"></script>
-				<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+				<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
 				<meta
 					name="description"
