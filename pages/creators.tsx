@@ -163,14 +163,14 @@ const Index: NextPage = () => {
 				<hr></hr>
 
 				<h2>Jason Xu</h2>
-					<h4>Something </h4>
+					<h4>Web Developer </h4>
 
 					Roles:
 					<ul>
-						<li> Something </li>
+						<li> Deployed, designed, and built the Interlingua-English Translator website </li>
 					</ul>
 
-					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Github</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="https://github.com/JasonXu314/" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Github</a> <br></br>
 					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-linkedin"]}></i> LinkedIn</a> <br></br>
 					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-email"]}></i> Email</a> <br></br>
 					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-globe"]}></i> Personal Website</a> <br></br>
@@ -180,14 +180,20 @@ const Index: NextPage = () => {
 			</div>
 
 			<div className={styles['viewer-counts']}>
+				<hr></hr>
+
+				<div>
+					Please email <a href="mailto:interlinguacorpus@gmail.com" >interlinguacorpus@gmail.com</a> for questions and suggestions.
+				</div>
+
 				<div className={styles.regular}>
 					This site has been visited{' '}
 					<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=3&type=page&initCount=0" alt="web counter" /> times
-				</div>	
+				</div>
 				<div>
-					<p><a href="https://github.com/JasonXu314/translator">
+					<p><a href="https://github.com/JasonXu314/translator" className={styles["special-a"]}>
 						<i className={styles['icon-github']}></i> See how this site was made</a> <br></br>
-					<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing"> 
+					<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing" className={styles["special-a"]}> 
 						<i className={styles['icon-google']}></i> See the Google Colab source code for the translator</a></p>
 				</div>
 			</div>

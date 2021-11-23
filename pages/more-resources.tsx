@@ -162,14 +162,20 @@ const Index: NextPage = () => {
 			</div>
 
 			<div className={styles['viewer-counts']}>
+				<hr></hr>
+
+				<div>
+					Please email <a href="mailto:interlinguacorpus@gmail.com" >interlinguacorpus@gmail.com</a> for questions and suggestions.
+				</div>
+
 				<div className={styles.regular}>
 					This site has been visited{' '}
 					<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=3&type=page&initCount=0" alt="web counter" /> times
 				</div>
 				<div>
-					<p><a href="https://github.com/JasonXu314/translator">
+					<p><a href="https://github.com/JasonXu314/translator" className={styles["special-a"]}>
 						<i className={styles['icon-github']}></i> See how this site was made</a> <br></br>
-					<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing"> 
+					<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing" className={styles["special-a"]}> 
 						<i className={styles['icon-google']}></i> See the Google Colab source code for the translator</a></p>
 				</div>
 			</div>
