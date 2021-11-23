@@ -338,25 +338,3 @@
     outline: none;
     font-size: 15px;
 }
-
-body {
-	padding-top: 50px;
-}
-
-@media screen and (max-width: 769px) {
-	body {
-		padding-top: 100px;
-	}
-}
-  
-@media screen and (max-width: 250px) {
-	body {
-		padding-top: 150px;
-	}
-}
-
-@media screen and (max-width: 187px) {
-	body {
-		padding-top: 200px;
-	}
-}
