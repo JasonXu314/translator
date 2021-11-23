@@ -118,27 +118,25 @@ const Index: NextPage = () => {
 				</div>
 				<div>
 					<button type="button" className={styles.collapsible} onClick={() => setOpen(open.map((v, i) => (i === 1 ? !v : v)))}>
-						What is the purpose of the Interlingua Corpus Project?
+						What is the purpose of the Interlingua-English Translator?
 					</button>
 					<div className={`${styles.content} ${styles['content-1']}` + (open[1] ? ' ' + styles.shown : '')}>
 						<br></br>
-						The goal of the Interlingua Corpus Project is to aggregate a large collection of Interlingua sentences as a community resource. The
-						sentences in this corpus, including matched pairs of Interlingua-English sentences, are automatically collected from public websites and
-						documents using a web crawler. The emphasis of this project is on sentences because sentences provide vocabulary in context and represent
-						the grammar as used in various styles of writing. This collection of Interlingua sentences will provide a foundation for a variety of uses
-						including enumeration of Interlingua&apos;s core vocabulary and development of comprehensive frequency dictionaries for language learners,
-						corpus linguistics studies, and for the development of computational linguistics resources such as language models and machine translation
-						tools for Interlingua.
+						Despite its increasing popularity, Interlingua is not supported by online translation tools
+						such as Google Translate. The purpose of the Interlingua-English Translator is to bridge this gap, by
+						creating a computer program that can translate text between English and Interlingua. The hopes is that 
+						this translation tool will act as a valuable educational resource to
+						Interlingua learners, and that it might spread awareness of Interlingua to a broader audience.
 						<br></br> <br></br>
 					</div>
 				</div>
 				<div>
 					<button type="button" className={styles.collapsible} onClick={() => setOpen(open.map((v, i) => (i === 2 ? !v : v)))}>
-						Is there a translator between English and Interlingua?
+						Is the data used to train the model public?
 					</button>
 					<div className={`${styles.content} ${styles['content-2']}` + (open[2] ? ' ' + styles.shown : '')}>
 						<br></br>
-						Yes, there is! You can find a link to it, as well as source code, in the &quot;more resources&quot; tab.
+						Yes, it is! You can find a link to the data (the Interlingua Corpus Project), as well as source code, in the &quot;more resources&quot; tab.
 						<br></br> <br></br>
 					</div>
 				</div>
@@ -182,8 +180,8 @@ const Index: NextPage = () => {
 					</button>
 					<div className={`${styles.content} ${styles['content-4']}` + (open[4] ? ' ' + styles.shown : '')}>
 						<br></br>
-						Please contact <a href="mailto:interlinguacorpus@gmail.com">interlinguacorpus@gmail.com</a> or{' '}
-						<a href="mailto:jasonding@berkeley.com">jasonding@berkeley.com</a> for questions and suggestions.
+						Please contact <a href="mailto:interlinguacorpus@gmail.com" className={styles["special-a"]}>interlinguacorpus@gmail.com</a> or{' '}
+						<a href="mailto:jasonding@berkeley.com" className={styles["special-a"]}>jasonding@berkeley.com</a> for questions and suggestions.
 						<br></br> <br></br>
 					</div>
 				</div>
@@ -205,7 +203,7 @@ const Index: NextPage = () => {
 				<hr></hr>
 
 				<div>
-					Please email <a href="mailto:interlinguacorpus@gmail.com" >interlinguacorpus@gmail.com</a> for questions and suggestions.
+					Please email <a href="mailto:interlinguacorpus@gmail.com" className={styles["special-a"]}>interlinguacorpus@gmail.com</a> for questions and suggestions.
 				</div>
 
 				<div className={styles.regular}>
