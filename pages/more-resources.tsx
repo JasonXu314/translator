@@ -132,12 +132,10 @@ const Index: NextPage = () => {
 			
 			<div className={styles.information}>
 				<div className={styles['more-resources']}>
-					<h4>Online Interlingua Translator</h4>
-						Created by Jason Ding with the help of his mentor, Todd Mockler, the first online, public, and free and open source
-						Interlingua and English translator was created. This translator uses a smaller version of the model 
-						in Google Colab, but provides a user-interface similar to that of other online translators, 
-						such as Google Translate.<br></br> <br></br>
-						&nbsp;&nbsp;&nbsp;<a href="https://interlingua-translator.vercel.app/" className={styles['special-a']}><i className={styles["icon-translator"]}></i> Link to the Interlingua-English Translator</a>
+					<h4>Interlingua Corpus Project</h4>
+					Created by Jason Ding with the help of his mentor, Todd Mockler, the Interlingua Corpus Project has a collection of over 1.2 million quality-controlled Interlingua sentences scraped from an individually-designed 
+					web crawler that has visited over 6 million relevant websites, while also providing over 80,000 parallel Interlingua-English sentences and other useful data.<br></br> <br></br>
+						&nbsp;&nbsp;&nbsp;<a href="http://www.interlinguacorpus.org/" className={styles['special-a']}><i className={styles["icon-book"]}></i> Link to the Interlingua Corpus Project</a>
 					<br></br>
 
 					<hr></hr>
