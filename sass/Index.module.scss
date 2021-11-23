@@ -341,11 +341,17 @@
 
 @media screen and (max-width: 565px) {
 	.main {
-		padding-top: 65px;
+		padding-top: 60px;
 	}
 }
   
-@media screen and (max-width: 248px) {
+@media screen and (max-width: 348px) {
+	.main {
+		padding-top: 70px;
+	}
+}
+
+@media screen and (max-width: 291px) {
 	.main {
 		padding-top: 80px;
 	}
@@ -353,6 +359,6 @@
 
 @media screen and (max-width: 181px) {
 	.main {
-		padding-top: 95px;
+		padding-top: 90px;
 	}
 }
