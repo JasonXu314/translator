@@ -133,8 +133,12 @@ const Index: NextPage = () => {
 			</div>
 
 			<div className={styles['lang-row']}>
-				<h4 className={styles.lang}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-				<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
+				<h4 className={styles.lang} id={styles.left}>
+					{inputLang === 'eng' ? 'English' : 'Interlingua'}
+				</h4>
+				<h4 className={styles.lang} id={styles.right}>
+					{outputLang === 'eng' ? 'English' : 'Interlingua'}
+				</h4>
 			</div>
 			<div className={styles['control-row']}>
 				<textarea rows={8} cols={96} value={input} maxLength={999} onChange={(evt) => setInput(evt.target.value)} />
@@ -158,7 +162,11 @@ const Index: NextPage = () => {
 				<hr></hr>
 
 				<div>
-					Please email <a href="mailto:interlinguacorpus@gmail.com" className={styles["special-a"]}>interlinguacorpus@gmail.com</a> for questions and suggestions.
+					Please email{' '}
+					<a href="mailto:interlinguacorpus@gmail.com" className={styles['special-a']}>
+						interlinguacorpus@gmail.com
+					</a>{' '}
+					for questions and suggestions.
 				</div>
 
 				<div className={styles.regular}>
@@ -166,10 +174,15 @@ const Index: NextPage = () => {
 					<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=3&type=page&initCount=0" alt="web counter" /> times
 				</div>
 				<div>
-					<p><a href="https://github.com/JasonXu314/translator" className={styles["special-a"]}>
-						<i className={styles['icon-github']}></i> See how this site was made</a> <br></br>
-					<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing" className={styles["special-a"]}> 
-						<i className={styles['icon-google']}></i> See the Google Colab source code for the translator</a></p>
+					<p>
+						<a href="https://github.com/JasonXu314/translator" className={styles['special-a']}>
+							<i className={styles['icon-github']}></i> See how this site was made
+						</a>{' '}
+						<br></br>
+						<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing" className={styles['special-a']}>
+							<i className={styles['icon-google']}></i> See the Google Colab source code for the translator
+						</a>
+					</p>
 				</div>
 			</div>
 		</div>
