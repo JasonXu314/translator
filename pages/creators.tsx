@@ -47,11 +47,15 @@ const Index: NextPage = () => {
 					integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
 					crossOrigin="anonymous"></link>
 				<script
+					src="http://code.jquery.com/jquery-3.3.1.js"
+					integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+					crossOrigin="anonymous"></script>
+				<script
 					src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
 					integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
 					crossOrigin="anonymous"></script>
-				<script src="https://kit.fontawesome.com/a076d05399.js" crossOrigin="anonymous"></script>
 				<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+				
 				<meta
 					name="description"
 					content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses."
@@ -123,36 +127,57 @@ const Index: NextPage = () => {
 				</div>
 			</nav>
 			<div className={styles.welcome}>
-				<h1>
-					<b>Online Interlingua-English Translator</b>
-				</h1>
+				<h1><b>Creators</b></h1>
+			</div>
+
+			<div className={styles.information}>
+				<h2>Jason Ding</h2>
+					<h4>Lead Project Designer and Computational Linguistics Programmer </h4>
+
+					Roles:
+					<ul>
+						<li> Created programs to gather the Interlingua Corpus </li>
+						<li> Built the Interlingua-Engish Translator </li>
+						<li> Designed and coded the Interlingua Corpus and Translator websites </li>
+					</ul>
+
+					&nbsp;&nbsp;&nbsp;<a href="https://github.com/JasonDing9" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Github</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/jasonding9/" className={styles["special-a"]}><i className={styles["icon-linkedin"]}></i> LinkedIn</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="mailto:jasonding@berkeley.edu" className={styles["special-a"]}><i className={styles["icon-email"]}></i> jasonding@berkeley.edu</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-globe"]}></i> Personal Website</a> <br></br>
 				<br></br>
-				Welcome to the first online, public, and free and open source Interlingua and English translator! Input your text in the left text box and the
-				translated sentence will be shown in the right text box. Click the &quot;Change Language&quot; button below to change the translator&apos;s
-				direction.
-			</div>
 
-			<div className={styles['lang-row']}>
-				<h4 className={styles.lang}>{inputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-				<h4 className={styles.lang}>{outputLang === 'eng' ? 'English' : 'Interlingua'}</h4>
-			</div>
-			<div className={styles['control-row']}>
-				<textarea rows={8} cols={96} value={input} maxLength={999} onChange={(evt) => setInput(evt.target.value)} />
-				<div className={styles['btn-container']}>
-					<Button
-						onClick={() => {
-							setInputLang(inputLang === 'eng' ? 'ina' : 'eng');
-							setInput(output);
-							setOutput('');
-						}}>
-						<img src="/swap.svg" alt="Swap Languages" />
-					</Button>
-				</div>
-				<textarea rows={8} cols={96} value={output} readOnly />
-			</div>
+				<hr></hr>
 
-			<br></br>
-			<br></br>
+				<h2>Todd Mockler</h2>
+					<h4>Mentor </h4>
+
+					Roles:
+					<ul>
+						<li> Guided the Interlingua projects into fruition </li>
+					</ul>
+
+					&nbsp;&nbsp;&nbsp;<a href="mailto:TMockler@danforthcenter.org" className={styles["special-a"]}><i className={styles["icon-email"]}></i> TMockler@danforthcenter.org</a> <br></br>
+				<br></br>
+
+				<hr></hr>
+
+				<h2>Jason Xu</h2>
+					<h4>Web Developer </h4>
+
+					Roles:
+					<ul>
+						<li> Deployed, designed, and built the Interlingua-English Translator website </li>
+					</ul>
+
+					&nbsp;&nbsp;&nbsp;<a href="https://github.com/JasonXu314/" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Github</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-linkedin"]}></i> LinkedIn</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-email"]}></i> Email</a> <br></br>
+					&nbsp;&nbsp;&nbsp;<a href="/" className={styles["special-a"]}><i className={styles["icon-globe"]}></i> Personal Website</a> <br></br>
+				<br></br>
+
+				<hr></hr>
+			</div>
 
 			<div className={styles['viewer-counts']}>
 				<hr></hr>
