@@ -47,11 +47,15 @@ const Index: NextPage = () => {
 					integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
 					crossOrigin="anonymous"></link>
 				<script
+					src="http://code.jquery.com/jquery-3.3.1.js"
+					integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+					crossOrigin="anonymous"></script>
+				<script
 					src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
 					integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
 					crossOrigin="anonymous"></script>
-				<script src="https://kit.fontawesome.com/a076d05399.js" crossOrigin="anonymous"></script>
 				<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+				
 				<meta
 					name="description"
 					content="Interlingua translator provides Interlingua vocabulary and grammar in context for language learners and linguistic analyses."
@@ -123,50 +127,43 @@ const Index: NextPage = () => {
 				</div>
 			</nav>
 			<div className={styles.welcome}>
-				<h1>
-					<b>Online Interlingua-English Translator</b>
-				</h1>
-				<br></br>
-				Welcome to the first online, public, and free and open source Interlingua and English translator! Input your text in the left text box and the
-				translated sentence will be shown in the right text box. Click the &quot;Change Language&quot; button below to change the translator&apos;s
-				direction.
+				<h1><b>More Resources</b></h1>
 			</div>
+			
+			<div className={styles.information}>
+				<div className={styles['more-resources']}>
+					<h4>Interlingua Corpus Project</h4>
+					Created by Jason Ding with the help of his mentor, Todd Mockler, the Interlingua Corpus Project has a collection of over 1.2 million quality-controlled Interlingua sentences scraped from an individually-designed 
+					web crawler that has visited over 6 million relevant websites, while also providing over 80,000 parallel Interlingua-English sentences and other useful data.<br></br> <br></br>
+						&nbsp;&nbsp;&nbsp;<a href="http://www.interlinguacorpus.org/" className={styles['special-a']}><i className={styles["icon-book"]}></i> Link to the Interlingua Corpus Project</a>
+					<br></br>
 
-			<div className={styles['lang-row']}>
-				<h4 className={styles.lang} id={styles.left}>
-					{inputLang === 'eng' ? 'English' : 'Interlingua'}
-				</h4>
-				<h4 className={styles.lang} id={styles.right}>
-					{outputLang === 'eng' ? 'English' : 'Interlingua'}
-				</h4>
-			</div>
-			<div className={styles['control-row']}>
-				<textarea rows={8} cols={96} value={input} maxLength={999} onChange={(evt) => setInput(evt.target.value)} />
-				<div className={styles['btn-container']}>
-					<Button
-						onClick={() => {
-							setInputLang(inputLang === 'eng' ? 'ina' : 'eng');
-							setInput(output);
-							setOutput('');
-						}}>
-						<img src="/swap.svg" alt="Swap Languages" />
-					</Button>
+					<hr></hr>
+
+					<h4>Google Colab Interlingua Translator</h4>
+						Created by Jason Ding with the help of his mentor, Todd Mockler, the first online, public, and free and 
+						open source Interlingua and English translator was created. This translator uses the strongest Interlingua-English 
+						translator model there is to translate in both directions between English and Interlinuga.<br></br> <br></br>
+
+						The model has scored a BLEU score of 42.45 going from English to Interlingua and a 42.54 going from
+						Interlingua to English, both of which are "high quality translation" according to one of <a href="https://cloud.google.com/translate/automl/docs/evaluate" className={styles["special-a"]}>Google's
+						articles.</a><br></br> <br></br>
+						&nbsp;&nbsp;&nbsp;<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing" className={styles["special-a"]}><i className={styles["icon-google"]}></i> Link to the Google Colab Interlingua-English Translator</a>
+					<br></br>
+
+					<hr></hr>
+
+					<h4>Source Code</h4>
+						All source code and code used in all of the projects will be posted in the following GitHub account.<br></br> <br></br>
+						&nbsp;&nbsp;&nbsp;<a href="https://github.com/JasonDing9" className={styles["special-a"]}><i className={styles["icon-github"]}></i> Link to the GitHub account</a>
 				</div>
-				<textarea rows={8} cols={96} value={output} readOnly />
 			</div>
-
-			<br></br>
-			<br></br>
 
 			<div className={styles['viewer-counts']}>
 				<hr></hr>
 
 				<div>
-					Please email{' '}
-					<a href="mailto:interlinguacorpus@gmail.com" className={styles['special-a']}>
-						interlinguacorpus@gmail.com
-					</a>{' '}
-					for questions and suggestions.
+					Please email <a href="mailto:interlinguacorpus@gmail.com" className={styles["special-a"]}>interlinguacorpus@gmail.com</a> for questions and suggestions.
 				</div>
 
 				<div className={styles.regular}>
@@ -174,15 +171,10 @@ const Index: NextPage = () => {
 					<img src="https://hitwebcounter.com/counter/counter.php?page=7856187&style=0008&nbdigits=3&type=page&initCount=0" alt="web counter" /> times
 				</div>
 				<div>
-					<p>
-						<a href="https://github.com/JasonXu314/translator" className={styles['special-a']}>
-							<i className={styles['icon-github']}></i> See how this site was made
-						</a>{' '}
-						<br></br>
-						<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing" className={styles['special-a']}>
-							<i className={styles['icon-google']}></i> See the Google Colab source code for the translator
-						</a>
-					</p>
+					<p><a href="https://github.com/JasonXu314/translator" className={styles["special-a"]}>
+						<i className={styles['icon-github']}></i> See how this site was made</a> <br></br>
+					<a href="https://colab.research.google.com/drive/1SFewmDos1Z-Gq9z6OB9tgxaBsNdZvaT3?usp=sharing" className={styles["special-a"]}> 
+						<i className={styles['icon-google']}></i> See the Google Colab source code for the translator</a></p>
 				</div>
 			</div>
 		</div>

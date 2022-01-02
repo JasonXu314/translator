@@ -1,15 +1,33 @@
 .main {
+	position: relative;
+	z-index: 0;
+
 	.welcome {
+		padding: 0.25em 10%;
 		margin-bottom: 1em;
+		margin-top: 4em;
+	}
+
+	.border {
+		border: 2px solid black;
+		margin: 5px;
 	}
 
 	.lang-row {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		display: block;
+		position: relative;
+		margin: 0 10% 3em;
 
-		.lang {
-			margin: 0.25em 5em;
+		#left {
+			position: absolute;
+			display: inline-block;
+			left: 0;
+		}
+
+		#right {
+			position: absolute;
+			display: inline-block;
+			right: 0;
 		}
 	}
 
@@ -17,10 +35,11 @@
 		position: relative;
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
+		padding: 0.25em 10%;
 
 		.btn-container {
 			position: relative;
-			top: 25%;
+			top: 40%;
 		}
 
 		textarea {
@@ -34,7 +53,327 @@
 		}
 	}
 
+	.information {
+		padding: 0.25em 10%;
+	}
+
+	.viewer-counts {
+		padding: 0.25em 10%;
+
+		.regular {
+			margin-top: 0em;
+		}
+	}
+
 	a {
 		color: blue;
 	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0.25em 0;
+	}
+
+	.navbar {
+		overflow: hidden;
+		background-color: #f5f5f5;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+
+		.brand {
+			display: block;
+		}
+
+		a {
+			float: left;
+			color: #272727;
+			display: block;
+			text-align: center;
+
+			&:not(:first-child) {
+				padding: 14px 5px;
+			}
+
+			&:hover {
+				background: #ddd;
+				color: #272727;
+			}
+		}
+	}
+
+	.main {
+		padding: 16px;
+		margin-top: 50px;
+		height: 1200px; /* Used in this example to enable scrolling */
+	}
+
+	/* The dropdown container */
+	.dropdown {
+		float: left;
+		overflow: hidden;
+	}
+
+	/* Dropdown button */
+	.dropdown .dropbtn {
+		font-size: 16px;
+		border: none;
+		outline: none;
+		color: white;
+		padding: 14px 16px;
+		background-color: inherit;
+		font-family: inherit; /* Important for vertical align on mobile phones */
+		margin: 0; /* Important for vertical align on mobile phones */
+	}
+
+	/* Dropdown content (hidden by default) */
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+		float: none;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	/* Add a grey background color to dropdown links on hover */
+	.dropdown-content a:hover {
+		background-color: #ddd;
+	}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.collapsible {
+		background-color: #777;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+	}
+
+	.active,
+	.collapsible:hover {
+		background-color: #555;
+	}
+
+	.collapsible:after {
+		content: '\002B';
+		color: white;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+
+	.active:after {
+		content: '\2212';
+	}
+
+	.content {
+		padding: 3px 18px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.25s ease-out;
+		background-color: #f1f1f1;
+
+		&.shown {
+			&.content-0 {
+				max-height: 206px;
+			}
+
+			&.content-1 {
+				max-height: 226px;
+			}
+
+			&.content-2 {
+				max-height: 66px;
+			}
+
+			&.content-3 {
+				max-height: 866px;
+			}
+
+			&.content-4 {
+				max-height: 86px;
+			}
+
+			&.content-5 {
+				max-height: 106px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 565px) {
+		padding-top: 60px;
+	}
+
+	@media screen and (max-width: 348px) {
+		padding-top: 80px;
+	}
+
+	@media screen and (max-width: 291px) {
+		padding-top: 90px;
+	}
+
+	@media screen and (max-width: 238px) {
+		padding-top: 130px;
+	}
+}
+
+.icon-github:before {
+	content: '\f09b';
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: 0px;
+	margin-right: 10px;
+	color: black;
+}
+
+.icon-google:before {
+	content: '\f1a0';
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: 0px;
+	margin-right: 10px;
+	color: black;
+}
+
+.icon-translator:before {
+	content: '\f1ab';
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: 0px;
+	margin-right: 10px;
+	color: black;
+}
+
+.icon-linkedin:before {
+	content: '\f08c';
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: 0px;
+	margin-right: 10px;
+	color: black;
+}
+
+.icon-email:before {
+	content: '\f0e0';
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: 0px;
+	margin-right: 10px;
+	color: black;
+}
+
+.icon-globe:before {
+	content: '\f0ac';
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: 0px;
+	margin-right: 10px;
+	color: black;
+}
+
+.icon-book:before {
+	content: '\f02d';
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	margin-left: 0px;
+	margin-right: 10px;
+	color: black;
+}
+
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+.special-a:link {
+	text-decoration: none;
+	color: #2596be;
+}
+
+.special-a:visited {
+	text-decoration: none;
+	color: #2596be;
+}
+
+.special-a:hover {
+	text-decoration: none;
+	color: #12637f;
+}
+
+.special-a:active {
+	text-decoration: none;
+	color: #12637f;
 }
