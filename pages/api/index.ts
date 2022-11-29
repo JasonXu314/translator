@@ -11,7 +11,7 @@ export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> 
 				return res.status(400).json({ type: 'error', reason: 'direction is required' });
 			}
 
-			const response = await axios.get(`http://18.26.2.114:5001/?text=${encodeURI(req.query.text as string)}&direction=${req.query.direction}`);
+			const response = await axios.get(`http://mcgraw.rm.cab:5001/?text=${encodeURI(req.query.text as string)}&direction=${req.query.direction}`);
 			return res.status(200).json(response.data);
 		}
 		default: {
