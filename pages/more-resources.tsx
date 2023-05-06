@@ -163,7 +163,11 @@ const Index: NextPage = () => {
 				<hr></hr>
 
 				<div>
-					Please email <a href="mailto:interlinguacorpus@gmail.com" className={styles["special-a"]}>interlinguacorpus@gmail.com</a> for questions and suggestions.
+					Please email{' '}
+					<a href="mailto:jasonding@berkeley.edu" className={styles['special-a']}>
+						jasonding@berkeley.edu
+					</a>{' '}
+					for questions and suggestions.
 				</div>
 
 				<div className={styles.regular}>
