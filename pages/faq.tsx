@@ -180,7 +180,7 @@ const Index: NextPage = () => {
 					</button>
 					<div className={`${styles.content} ${styles['content-4']}` + (open[4] ? ' ' + styles.shown : '')}>
 						<br></br>
-						Please contact <a href="mailto:interlinguacorpus@gmail.com" className={styles["special-a"]}>interlinguacorpus@gmail.com</a> or{' '}
+						Please contact {' '}
 						<a href="mailto:jasonding@berkeley.com" className={styles["special-a"]}>jasonding@berkeley.com</a> for questions and suggestions.
 						<br></br> <br></br>
 					</div>
